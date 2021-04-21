@@ -1,0 +1,75 @@
+http_interactions:
+- request:
+    method: post
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/pipeline?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: '{"branch":"master"}'
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+  response:
+    status:
+      status_code: 201
+      category: Success
+      reason: Created
+      message: 'Success: (201) Created'
+    headers:
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:42 GMT
+      server: nginx
+      set-cookie: ring-session=HGikj1CWdqtrFfkLGBr0oVg%2FG9vPKBZ%2ByTcIBX5tv1eBqkd4VY%2FU3YCRbNmg5TKzrcyNhLj4P8UfbH9GVwZ7HoM9v3abiRgjrhG%2BlBvt7B2Q8FUpdDaPSKljlk98sYEmJ9AY7gPyzY0gjaZ7c0PHx4LvruD3fUYXFHqk1GoszsIAg4MoIQpri2kFYQ6gBpdCtI4%2BTvZGp9KthPhUT1199HqUsdgHC0kqzXRCnkSMEyg%3D--38pnTckZi9uqT3Zij7oINARfhpMT%2FE7Mgl2PgFf%2BdhA%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:10:08 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      x-circleci-identity: circle-www-api-v1-777c756979-vnm26
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: e76201be-24df-48f0-aec3-2d42eba32047
+      x-route: /api/v2/project/:project-slug/pipeline
+      content-length: '116'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"number":470,"state":"pending","id":"6cecb5f1-fc2f-4aeb-9427-64414ec92354","created_at":"2020-11-03T11:39:42.442Z"}'
+  recorded_at: 2020-11-03 11:39:43 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: post
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/pipeline?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: '{"branch":"master"}'
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+  response:
+    status:
+      status_code: 201
+      category: Success
+      reason: Created
+      message: 'Success: (201) Created'
+    headers:
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:42 GMT
+      server: nginx
+      set-cookie: ring-session=bWTgir85mJDOuJsrJ274i2zWA062490w4FG3sknluWneDlkPeU6JyAUAQRlur17A6Qx%2BJq6dy%2BB2ippkUokmXNoMzu6ZTBuMFWD%2FZsktO1s3l5TaxHD8jW5wwWde%2BmXu2K6ow4%2F6wo7WgydRSXWKH8rJwNb5gDOaUvw9d0YZw0MUJcIbJvPFeW2lTdcoqlIRDrqBbfKNTWajRTumd1k%2B3jiPgeSbHmk1SToR0LuRYuc%3D--5IS2osmCzCOtFYTGzGfk7RnvAPbNMcS9Y2PmQ1KP%2BEk%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:16:36 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      x-circleci-identity: circle-www-api-v1-777c756979-8dq84
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 644ef9fe-054b-4632-b846-5c00749dab41
+      x-route: /api/v2/project/:project-slug/pipeline
+      content-length: '116'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"number":471,"state":"pending","id":"a1e30a6b-5747-43fa-a415-3c6f5d9debda","created_at":"2020-11-03T11:39:42.944Z"}'
+  recorded_at: 2020-11-03 11:39:43 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

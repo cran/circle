@@ -1,0 +1,891 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/pipeline?limit=30&circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:21 GMT
+      server: nginx
+      set-cookie: ring-session=TN%2BO0OwnOPLu6qthl9HmfWp2ObOMX%2B%2BT6n1BkH0i8CZK%2FZktdhVOJNDyTnql32JB44w96wCHRMtJ1ErhEsAvFiuyoRd4CXCwD8Bz9WMG9PtiC5%2FWax1aqTw8ls02%2BM8%2Bt%2FW7ZS%2F7TA2sXVEbYSY7eIrh%2FqZaIdVDqWP%2FTfQMNTnMdFBZPnaKWE9OsSlkpufnltKB7uq3d2J42mxRv0E%2F5AhS%2FelruUAE3W52%2F9TnOSI%3D--zg8%2Bp%2Be7%2BZl9ir%2BR3rQNEpqui%2BMAfDNgyBro3LpsJ5o%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:18:55 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-k6d58
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 958d6340-d10a-4abb-9a93-c320e7902dd3
+      x-route: /api/v2/project/:project-slug/pipeline
+      transfer-encoding: chunked
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":"AARLwwWqnqVKvDWCT93ntYpkxmjY3D7hgJwZtCdhhd3rFkum8tknTHlzVy-CCDIg7-vH8_CXyvBubR3kZCmJNpkr8CrHSW-Se4fcua7Dlyt_T-b-bhVLt9FwUnNSUT5DPDMqdvhyxWsc","items":[{"id":"9c053b8f-67fc-4543-a6a9-51b9540692f4","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:35:07.224Z","number":469,"state":"created","created_at":"2020-11-03T11:35:07.224Z","trigger":{"received_at":"2020-11-03T11:35:07.173Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"e1f64ee88ff28ee54849fc78d477a8a312fc19b9","provider_name":"GitHub","commit":{"body":"","subject":"update
+        vcr cassettes"},"branch":"master"}},{"id":"ed7335bf-d605-401e-88c0-4cfe57c4af4f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:04:49.739Z","number":468,"state":"created","created_at":"2020-11-03T11:04:49.739Z","trigger":{"received_at":"2020-11-03T11:04:49.683Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"b30f76f4e2eaf553dc37e5ebe067b5b821310805","provider_name":"GitHub","commit":{"body":"","subject":"Increase
+        code coverage and remove git2r"},"branch":"master"}},{"id":"111fb318-b3e9-4c7b-89c9-c475acaffa29","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:54:23.294Z","number":467,"state":"created","created_at":"2020-11-03T10:54:23.294Z","trigger":{"received_at":"2020-11-03T10:54:23.249Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"f06ff0efea65ab6cbd72678de5c27369585aae12","provider_name":"GitHub","commit":{"body":"","subject":"fix
+        path"},"branch":"codecov"}},{"id":"6aa98dbf-68fd-4696-a5eb-6f87d2724fca","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:49:20.887Z","number":466,"state":"created","created_at":"2020-11-03T10:49:20.887Z","trigger":{"received_at":"2020-11-03T10:49:20.841Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"6b523905f047c3da5433d83cc229944b6225d604","provider_name":"GitHub","commit":{"body":"","subject":"use
+        gert::git_clone"},"branch":"codecov"}},{"id":"2b7c55eb-3648-45c0-9d5c-1730a07b3f9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:23:41.378Z","number":465,"state":"created","created_at":"2020-11-03T10:23:41.378Z","trigger":{"received_at":"2020-11-03T10:23:41.338Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"2fcfc53afd6a6b98915d512862bb0aa29ed74917","provider_name":"GitHub","commit":{"body":"","subject":"pass
+        gh token to create_from_github explicitly"},"branch":"codecov"}},{"id":"c7287fec-3a2b-4cc0-be22-bbffceb9cc9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:03:56.341Z","number":464,"state":"created","created_at":"2020-11-03T10:03:56.341Z","trigger":{"received_at":"2020-11-03T10:03:56.297Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"938100642973496fff3836206e4b55aefe491f68","provider_name":"GitHub","commit":{"body":"","subject":"get
+        GH Token on CI conditionally"},"branch":"codecov"}},{"id":"04aba538-5c6b-437b-ac00-bba435bc0e0a","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:45:20.588Z","number":463,"state":"created","created_at":"2020-11-03T09:45:20.588Z","trigger":{"received_at":"2020-11-03T09:45:20.537Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"11af1c77fe233d824d890377c706924b6ab71719","provider_name":"GitHub","commit":{"body":"","subject":"cleanup"},"branch":"codecov"}},{"id":"abfa7482-ad8d-431d-9287-1603580e256d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:29:58.460Z","number":462,"state":"created","created_at":"2020-11-03T09:29:58.460Z","trigger":{"received_at":"2020-11-03T09:29:58.408Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"aff9bc3d2a2ee71f930fe084e5f1d53207ae2cb6","provider_name":"GitHub","commit":{"body":"","subject":"add
+        full coverage"},"branch":"codecov"}},{"id":"cc9f4ccb-ccb0-41a0-b4a0-16ca60f33586","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T04:00:43.140Z","number":461,"state":"created","created_at":"2020-11-03T04:00:43.140Z","trigger":{"received_at":"2020-11-03T04:00:42.592Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"1ae27c25-b610-4e43-bcb7-578ca0a680d6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T19:45:34.774Z","number":460,"state":"created","created_at":"2020-11-02T19:45:34.774Z","trigger":{"received_at":"2020-11-02T19:45:34.736Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"82a0e3eb20c2602186b4ce27e72b2eab88187a89","provider_name":"GitHub","commit":{"body":"","subject":"make
+        codecov work"},"branch":"codecov"}},{"id":"1e9b92c9-aa21-46f0-821b-ba460bd30098","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T18:38:28.586Z","number":459,"state":"created","created_at":"2020-11-02T18:38:28.586Z","trigger":{"received_at":"2020-11-02T18:38:28.524Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"698710848b767ecb11a4e6d73819a1babfd6f7c4","provider_name":"GitHub","commit":{"body":"","subject":"run
+        codecov"},"branch":"codecov"}},{"id":"5ada2fc7-1ee6-45b0-8bd2-2598823d94b6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T04:00:38.120Z","number":458,"state":"created","created_at":"2020-11-02T04:00:38.120Z","trigger":{"received_at":"2020-11-02T04:00:38.114Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"8e9fc756-ae18-49c6-af6c-9925addf8d6b","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-01T04:00:35.613Z","number":457,"state":"created","created_at":"2020-11-01T04:00:35.613Z","trigger":{"received_at":"2020-11-01T04:00:35.607Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"aedfe76a-ddc7-4cc0-9a22-02cd41995f5c","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-31T04:00:15.224Z","number":456,"state":"created","created_at":"2020-10-31T04:00:15.224Z","trigger":{"received_at":"2020-10-31T04:00:15.219Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"d2fcdd5d-8319-4a1e-a346-b8b8b6c3b98d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-30T04:00:15.882Z","number":455,"state":"created","created_at":"2020-10-30T04:00:15.882Z","trigger":{"received_at":"2020-10-30T04:00:15.877Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a8790a20-8983-4d0e-ac50-981974580300","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-29T04:00:47.952Z","number":454,"state":"created","created_at":"2020-10-29T04:00:47.952Z","trigger":{"received_at":"2020-10-29T04:00:47.948Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a9c46710-8ca8-4a51-ac87-2616fa2e3cea","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-28T04:00:48.318Z","number":453,"state":"created","created_at":"2020-10-28T04:00:48.318Z","trigger":{"received_at":"2020-10-28T04:00:48.310Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"2d32987f-2075-4779-a61c-19c6fd70b109","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-27T04:00:13.254Z","number":452,"state":"created","created_at":"2020-10-27T04:00:13.254Z","trigger":{"received_at":"2020-10-27T04:00:13.250Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"ee2c6cd0-bb53-47ee-971b-10ef966f5cfd","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-26T04:00:47.176Z","number":451,"state":"created","created_at":"2020-10-26T04:00:47.176Z","trigger":{"received_at":"2020-10-26T04:00:47.171Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"cf1ffa66-6c33-4618-9999-9b9cb8593112","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-25T04:00:15.433Z","number":450,"state":"created","created_at":"2020-10-25T04:00:15.433Z","trigger":{"received_at":"2020-10-25T04:00:15.428Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/pipeline?limit=30&circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:22 GMT
+      server: nginx
+      set-cookie: ring-session=r2LutVGbG6hqOl%2FoJ0QZK1RW8MIWc5e71SRGHFbXvLWFR2Mn7y1%2F34igQOcfAS2oKCGAkwT6QPYjDZPUEgApCoJBLnFbIQ%2BdJJ%2F9CgANdSIK9aWJFkZmczDqAKw5esQMM2%2BeE8BVF7mhrpADXjrdWsR0BsGhhI5EU7F2lXbL7jcOmEPsKZgXf8oe%2BDLhBMfpfn8zF3R270pLyt%2BUke0VKxCapIwdfttgZCoRCwhfCHA%3D--H%2F3Q%2BwfpsWuuyQFjxtRXU1n6eJ6yTB6q5YkDdpYjv9A%3D;Path=/;HttpOnly;Expires=Wed,
+        03 Nov 2021 06:53:53 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-p8th9
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: d5f94d96-0721-4729-9288-dced9d5a2efb
+      x-route: /api/v2/project/:project-slug/pipeline
+      transfer-encoding: chunked
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":"AARLwwVTav32nuxqy8Qlcw1UULcOM6VFNBx5DI-nV8fuwwoFywdZTPkQMk4Jau4SO-meNDa-IEy3ITkhwXB-ynklPMRVReVR-BmD_ZD2fzS659VqXJB-TCEHM-Trr-htj5EsQFCGSL_r","items":[{"id":"9c053b8f-67fc-4543-a6a9-51b9540692f4","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:35:07.224Z","number":469,"state":"created","created_at":"2020-11-03T11:35:07.224Z","trigger":{"received_at":"2020-11-03T11:35:07.173Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"e1f64ee88ff28ee54849fc78d477a8a312fc19b9","provider_name":"GitHub","commit":{"body":"","subject":"update
+        vcr cassettes"},"branch":"master"}},{"id":"ed7335bf-d605-401e-88c0-4cfe57c4af4f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:04:49.739Z","number":468,"state":"created","created_at":"2020-11-03T11:04:49.739Z","trigger":{"received_at":"2020-11-03T11:04:49.683Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"b30f76f4e2eaf553dc37e5ebe067b5b821310805","provider_name":"GitHub","commit":{"body":"","subject":"Increase
+        code coverage and remove git2r"},"branch":"master"}},{"id":"111fb318-b3e9-4c7b-89c9-c475acaffa29","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:54:23.294Z","number":467,"state":"created","created_at":"2020-11-03T10:54:23.294Z","trigger":{"received_at":"2020-11-03T10:54:23.249Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"f06ff0efea65ab6cbd72678de5c27369585aae12","provider_name":"GitHub","commit":{"body":"","subject":"fix
+        path"},"branch":"codecov"}},{"id":"6aa98dbf-68fd-4696-a5eb-6f87d2724fca","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:49:20.887Z","number":466,"state":"created","created_at":"2020-11-03T10:49:20.887Z","trigger":{"received_at":"2020-11-03T10:49:20.841Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"6b523905f047c3da5433d83cc229944b6225d604","provider_name":"GitHub","commit":{"body":"","subject":"use
+        gert::git_clone"},"branch":"codecov"}},{"id":"2b7c55eb-3648-45c0-9d5c-1730a07b3f9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:23:41.378Z","number":465,"state":"created","created_at":"2020-11-03T10:23:41.378Z","trigger":{"received_at":"2020-11-03T10:23:41.338Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"2fcfc53afd6a6b98915d512862bb0aa29ed74917","provider_name":"GitHub","commit":{"body":"","subject":"pass
+        gh token to create_from_github explicitly"},"branch":"codecov"}},{"id":"c7287fec-3a2b-4cc0-be22-bbffceb9cc9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:03:56.341Z","number":464,"state":"created","created_at":"2020-11-03T10:03:56.341Z","trigger":{"received_at":"2020-11-03T10:03:56.297Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"938100642973496fff3836206e4b55aefe491f68","provider_name":"GitHub","commit":{"body":"","subject":"get
+        GH Token on CI conditionally"},"branch":"codecov"}},{"id":"04aba538-5c6b-437b-ac00-bba435bc0e0a","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:45:20.588Z","number":463,"state":"created","created_at":"2020-11-03T09:45:20.588Z","trigger":{"received_at":"2020-11-03T09:45:20.537Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"11af1c77fe233d824d890377c706924b6ab71719","provider_name":"GitHub","commit":{"body":"","subject":"cleanup"},"branch":"codecov"}},{"id":"abfa7482-ad8d-431d-9287-1603580e256d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:29:58.460Z","number":462,"state":"created","created_at":"2020-11-03T09:29:58.460Z","trigger":{"received_at":"2020-11-03T09:29:58.408Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"aff9bc3d2a2ee71f930fe084e5f1d53207ae2cb6","provider_name":"GitHub","commit":{"body":"","subject":"add
+        full coverage"},"branch":"codecov"}},{"id":"cc9f4ccb-ccb0-41a0-b4a0-16ca60f33586","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T04:00:43.140Z","number":461,"state":"created","created_at":"2020-11-03T04:00:43.140Z","trigger":{"received_at":"2020-11-03T04:00:42.592Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"1ae27c25-b610-4e43-bcb7-578ca0a680d6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T19:45:34.774Z","number":460,"state":"created","created_at":"2020-11-02T19:45:34.774Z","trigger":{"received_at":"2020-11-02T19:45:34.736Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"82a0e3eb20c2602186b4ce27e72b2eab88187a89","provider_name":"GitHub","commit":{"body":"","subject":"make
+        codecov work"},"branch":"codecov"}},{"id":"1e9b92c9-aa21-46f0-821b-ba460bd30098","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T18:38:28.586Z","number":459,"state":"created","created_at":"2020-11-02T18:38:28.586Z","trigger":{"received_at":"2020-11-02T18:38:28.524Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"698710848b767ecb11a4e6d73819a1babfd6f7c4","provider_name":"GitHub","commit":{"body":"","subject":"run
+        codecov"},"branch":"codecov"}},{"id":"5ada2fc7-1ee6-45b0-8bd2-2598823d94b6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T04:00:38.120Z","number":458,"state":"created","created_at":"2020-11-02T04:00:38.120Z","trigger":{"received_at":"2020-11-02T04:00:38.114Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"8e9fc756-ae18-49c6-af6c-9925addf8d6b","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-01T04:00:35.613Z","number":457,"state":"created","created_at":"2020-11-01T04:00:35.613Z","trigger":{"received_at":"2020-11-01T04:00:35.607Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"aedfe76a-ddc7-4cc0-9a22-02cd41995f5c","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-31T04:00:15.224Z","number":456,"state":"created","created_at":"2020-10-31T04:00:15.224Z","trigger":{"received_at":"2020-10-31T04:00:15.219Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"d2fcdd5d-8319-4a1e-a346-b8b8b6c3b98d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-30T04:00:15.882Z","number":455,"state":"created","created_at":"2020-10-30T04:00:15.882Z","trigger":{"received_at":"2020-10-30T04:00:15.877Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a8790a20-8983-4d0e-ac50-981974580300","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-29T04:00:47.952Z","number":454,"state":"created","created_at":"2020-10-29T04:00:47.952Z","trigger":{"received_at":"2020-10-29T04:00:47.948Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a9c46710-8ca8-4a51-ac87-2616fa2e3cea","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-28T04:00:48.318Z","number":453,"state":"created","created_at":"2020-10-28T04:00:48.318Z","trigger":{"received_at":"2020-10-28T04:00:48.310Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"2d32987f-2075-4779-a61c-19c6fd70b109","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-27T04:00:13.254Z","number":452,"state":"created","created_at":"2020-10-27T04:00:13.254Z","trigger":{"received_at":"2020-10-27T04:00:13.250Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"ee2c6cd0-bb53-47ee-971b-10ef966f5cfd","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-26T04:00:47.176Z","number":451,"state":"created","created_at":"2020-10-26T04:00:47.176Z","trigger":{"received_at":"2020-10-26T04:00:47.171Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"cf1ffa66-6c33-4618-9999-9b9cb8593112","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-25T04:00:15.433Z","number":450,"state":"created","created_at":"2020-10-25T04:00:15.433Z","trigger":{"received_at":"2020-10-25T04:00:15.428Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/pipeline?limit=30&circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:22 GMT
+      server: nginx
+      set-cookie: ring-session=wCnFhGuHaCJQLuNfMjE59AsOXyy5H6mIF10yKFzQx7bwD4EnZUordAOv6J0fnHFHvo%2F9HxE1tlbT7fQY1%2FoCvRtlp1k9DjlJC35RK4UreiWj9wZIFPjxPBBCBhzzdWMMX60YFRC8XKxGExwR2jafTSiej5H4haXlmC6h3CzCtyzsH6W61d336NpLd1naDBfYLEbtf6t0fMPqXxYx9rBTlkP6iIO23bT5%2By4eoi%2BjRKQ%3D--5DiEu1ZVhzUM1LtuAfoSQJ3D0PWUH0%2BGyYCBb7l1w0A%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:15:03 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-92swn
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 229739f4-37e1-43a1-9ea3-f9a533e14cfd
+      x-route: /api/v2/project/:project-slug/pipeline
+      transfer-encoding: chunked
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":"AARLwwXtt8RGR1BmwqjuQHtzN5BxKAYr-bg4Fpa-9ZO7ZqMoNB-tNpCnJSyxS39g3a_KWEBN-BWcWsl8azNfRpRpY9NhPNQ65kdZM033Yd_fCICc2bTML3vHP_eGoKroCimcmrhyYQTG","items":[{"id":"9c053b8f-67fc-4543-a6a9-51b9540692f4","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:35:07.224Z","number":469,"state":"created","created_at":"2020-11-03T11:35:07.224Z","trigger":{"received_at":"2020-11-03T11:35:07.173Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"e1f64ee88ff28ee54849fc78d477a8a312fc19b9","provider_name":"GitHub","commit":{"body":"","subject":"update
+        vcr cassettes"},"branch":"master"}},{"id":"ed7335bf-d605-401e-88c0-4cfe57c4af4f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:04:49.739Z","number":468,"state":"created","created_at":"2020-11-03T11:04:49.739Z","trigger":{"received_at":"2020-11-03T11:04:49.683Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"b30f76f4e2eaf553dc37e5ebe067b5b821310805","provider_name":"GitHub","commit":{"body":"","subject":"Increase
+        code coverage and remove git2r"},"branch":"master"}},{"id":"111fb318-b3e9-4c7b-89c9-c475acaffa29","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:54:23.294Z","number":467,"state":"created","created_at":"2020-11-03T10:54:23.294Z","trigger":{"received_at":"2020-11-03T10:54:23.249Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"f06ff0efea65ab6cbd72678de5c27369585aae12","provider_name":"GitHub","commit":{"body":"","subject":"fix
+        path"},"branch":"codecov"}},{"id":"6aa98dbf-68fd-4696-a5eb-6f87d2724fca","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:49:20.887Z","number":466,"state":"created","created_at":"2020-11-03T10:49:20.887Z","trigger":{"received_at":"2020-11-03T10:49:20.841Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"6b523905f047c3da5433d83cc229944b6225d604","provider_name":"GitHub","commit":{"body":"","subject":"use
+        gert::git_clone"},"branch":"codecov"}},{"id":"2b7c55eb-3648-45c0-9d5c-1730a07b3f9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:23:41.378Z","number":465,"state":"created","created_at":"2020-11-03T10:23:41.378Z","trigger":{"received_at":"2020-11-03T10:23:41.338Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"2fcfc53afd6a6b98915d512862bb0aa29ed74917","provider_name":"GitHub","commit":{"body":"","subject":"pass
+        gh token to create_from_github explicitly"},"branch":"codecov"}},{"id":"c7287fec-3a2b-4cc0-be22-bbffceb9cc9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:03:56.341Z","number":464,"state":"created","created_at":"2020-11-03T10:03:56.341Z","trigger":{"received_at":"2020-11-03T10:03:56.297Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"938100642973496fff3836206e4b55aefe491f68","provider_name":"GitHub","commit":{"body":"","subject":"get
+        GH Token on CI conditionally"},"branch":"codecov"}},{"id":"04aba538-5c6b-437b-ac00-bba435bc0e0a","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:45:20.588Z","number":463,"state":"created","created_at":"2020-11-03T09:45:20.588Z","trigger":{"received_at":"2020-11-03T09:45:20.537Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"11af1c77fe233d824d890377c706924b6ab71719","provider_name":"GitHub","commit":{"body":"","subject":"cleanup"},"branch":"codecov"}},{"id":"abfa7482-ad8d-431d-9287-1603580e256d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:29:58.460Z","number":462,"state":"created","created_at":"2020-11-03T09:29:58.460Z","trigger":{"received_at":"2020-11-03T09:29:58.408Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"aff9bc3d2a2ee71f930fe084e5f1d53207ae2cb6","provider_name":"GitHub","commit":{"body":"","subject":"add
+        full coverage"},"branch":"codecov"}},{"id":"cc9f4ccb-ccb0-41a0-b4a0-16ca60f33586","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T04:00:43.140Z","number":461,"state":"created","created_at":"2020-11-03T04:00:43.140Z","trigger":{"received_at":"2020-11-03T04:00:42.592Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"1ae27c25-b610-4e43-bcb7-578ca0a680d6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T19:45:34.774Z","number":460,"state":"created","created_at":"2020-11-02T19:45:34.774Z","trigger":{"received_at":"2020-11-02T19:45:34.736Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"82a0e3eb20c2602186b4ce27e72b2eab88187a89","provider_name":"GitHub","commit":{"body":"","subject":"make
+        codecov work"},"branch":"codecov"}},{"id":"1e9b92c9-aa21-46f0-821b-ba460bd30098","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T18:38:28.586Z","number":459,"state":"created","created_at":"2020-11-02T18:38:28.586Z","trigger":{"received_at":"2020-11-02T18:38:28.524Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"698710848b767ecb11a4e6d73819a1babfd6f7c4","provider_name":"GitHub","commit":{"body":"","subject":"run
+        codecov"},"branch":"codecov"}},{"id":"5ada2fc7-1ee6-45b0-8bd2-2598823d94b6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T04:00:38.120Z","number":458,"state":"created","created_at":"2020-11-02T04:00:38.120Z","trigger":{"received_at":"2020-11-02T04:00:38.114Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"8e9fc756-ae18-49c6-af6c-9925addf8d6b","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-01T04:00:35.613Z","number":457,"state":"created","created_at":"2020-11-01T04:00:35.613Z","trigger":{"received_at":"2020-11-01T04:00:35.607Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"aedfe76a-ddc7-4cc0-9a22-02cd41995f5c","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-31T04:00:15.224Z","number":456,"state":"created","created_at":"2020-10-31T04:00:15.224Z","trigger":{"received_at":"2020-10-31T04:00:15.219Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"d2fcdd5d-8319-4a1e-a346-b8b8b6c3b98d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-30T04:00:15.882Z","number":455,"state":"created","created_at":"2020-10-30T04:00:15.882Z","trigger":{"received_at":"2020-10-30T04:00:15.877Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a8790a20-8983-4d0e-ac50-981974580300","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-29T04:00:47.952Z","number":454,"state":"created","created_at":"2020-10-29T04:00:47.952Z","trigger":{"received_at":"2020-10-29T04:00:47.948Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a9c46710-8ca8-4a51-ac87-2616fa2e3cea","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-28T04:00:48.318Z","number":453,"state":"created","created_at":"2020-10-28T04:00:48.318Z","trigger":{"received_at":"2020-10-28T04:00:48.310Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"2d32987f-2075-4779-a61c-19c6fd70b109","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-27T04:00:13.254Z","number":452,"state":"created","created_at":"2020-10-27T04:00:13.254Z","trigger":{"received_at":"2020-10-27T04:00:13.250Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"ee2c6cd0-bb53-47ee-971b-10ef966f5cfd","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-26T04:00:47.176Z","number":451,"state":"created","created_at":"2020-10-26T04:00:47.176Z","trigger":{"received_at":"2020-10-26T04:00:47.171Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"cf1ffa66-6c33-4618-9999-9b9cb8593112","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-25T04:00:15.433Z","number":450,"state":"created","created_at":"2020-10-25T04:00:15.433Z","trigger":{"received_at":"2020-10-25T04:00:15.428Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/pipeline?limit=30&circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:22 GMT
+      server: nginx
+      set-cookie: ring-session=AzdBL2ulZM51p7vcc0zR9xdmDCtnZ7TnMG64UQTAYOJXpnua2qTDxEhY9lj2JsF%2BhzRzUFIzh8AN%2FyDw5sx2ivnO0wwbIHMIx0XaLNTAY8HqCVL%2FiPDvN%2BFHtYxh0nh8OXJ2k7vzmYU5AxE4bhMMZE6jwwG1KSded3B8ZvapNNF9eIQA%2BgLynsCEgNSS3AUeRLIdag1lMOWeZDn0xunVwjprIyLbd6JmZZttyCSP%2F7U%3D--Gz5qe%2B8RMPF%2FLF9mM3Qbyc9o0xaMa1yWwz2sXhXq7no%3D;Path=/;HttpOnly;Expires=Wed,
+        03 Nov 2021 07:54:39 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-5c89b
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 99ac55e2-9be5-4751-948b-e0f35270bfbf
+      x-route: /api/v2/project/:project-slug/pipeline
+      transfer-encoding: chunked
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":"AARLwwXqdvyndfHGoVFFCee3hT6YOddWZ0sT-vXSUV1P9Mk3MkGhVDgf_aJg6rBvLzOnHQW-rZzFnkPBny3vA_3dXF48zHVCyIB7Ov-7gV7L8azxxf18M8gT5EB2y1ZR1aO5czpuRCOV","items":[{"id":"9c053b8f-67fc-4543-a6a9-51b9540692f4","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:35:07.224Z","number":469,"state":"created","created_at":"2020-11-03T11:35:07.224Z","trigger":{"received_at":"2020-11-03T11:35:07.173Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"e1f64ee88ff28ee54849fc78d477a8a312fc19b9","provider_name":"GitHub","commit":{"body":"","subject":"update
+        vcr cassettes"},"branch":"master"}},{"id":"ed7335bf-d605-401e-88c0-4cfe57c4af4f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:04:49.739Z","number":468,"state":"created","created_at":"2020-11-03T11:04:49.739Z","trigger":{"received_at":"2020-11-03T11:04:49.683Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"b30f76f4e2eaf553dc37e5ebe067b5b821310805","provider_name":"GitHub","commit":{"body":"","subject":"Increase
+        code coverage and remove git2r"},"branch":"master"}},{"id":"111fb318-b3e9-4c7b-89c9-c475acaffa29","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:54:23.294Z","number":467,"state":"created","created_at":"2020-11-03T10:54:23.294Z","trigger":{"received_at":"2020-11-03T10:54:23.249Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"f06ff0efea65ab6cbd72678de5c27369585aae12","provider_name":"GitHub","commit":{"body":"","subject":"fix
+        path"},"branch":"codecov"}},{"id":"6aa98dbf-68fd-4696-a5eb-6f87d2724fca","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:49:20.887Z","number":466,"state":"created","created_at":"2020-11-03T10:49:20.887Z","trigger":{"received_at":"2020-11-03T10:49:20.841Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"6b523905f047c3da5433d83cc229944b6225d604","provider_name":"GitHub","commit":{"body":"","subject":"use
+        gert::git_clone"},"branch":"codecov"}},{"id":"2b7c55eb-3648-45c0-9d5c-1730a07b3f9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:23:41.378Z","number":465,"state":"created","created_at":"2020-11-03T10:23:41.378Z","trigger":{"received_at":"2020-11-03T10:23:41.338Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"2fcfc53afd6a6b98915d512862bb0aa29ed74917","provider_name":"GitHub","commit":{"body":"","subject":"pass
+        gh token to create_from_github explicitly"},"branch":"codecov"}},{"id":"c7287fec-3a2b-4cc0-be22-bbffceb9cc9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:03:56.341Z","number":464,"state":"created","created_at":"2020-11-03T10:03:56.341Z","trigger":{"received_at":"2020-11-03T10:03:56.297Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"938100642973496fff3836206e4b55aefe491f68","provider_name":"GitHub","commit":{"body":"","subject":"get
+        GH Token on CI conditionally"},"branch":"codecov"}},{"id":"04aba538-5c6b-437b-ac00-bba435bc0e0a","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:45:20.588Z","number":463,"state":"created","created_at":"2020-11-03T09:45:20.588Z","trigger":{"received_at":"2020-11-03T09:45:20.537Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"11af1c77fe233d824d890377c706924b6ab71719","provider_name":"GitHub","commit":{"body":"","subject":"cleanup"},"branch":"codecov"}},{"id":"abfa7482-ad8d-431d-9287-1603580e256d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:29:58.460Z","number":462,"state":"created","created_at":"2020-11-03T09:29:58.460Z","trigger":{"received_at":"2020-11-03T09:29:58.408Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"aff9bc3d2a2ee71f930fe084e5f1d53207ae2cb6","provider_name":"GitHub","commit":{"body":"","subject":"add
+        full coverage"},"branch":"codecov"}},{"id":"cc9f4ccb-ccb0-41a0-b4a0-16ca60f33586","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T04:00:43.140Z","number":461,"state":"created","created_at":"2020-11-03T04:00:43.140Z","trigger":{"received_at":"2020-11-03T04:00:42.592Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"1ae27c25-b610-4e43-bcb7-578ca0a680d6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T19:45:34.774Z","number":460,"state":"created","created_at":"2020-11-02T19:45:34.774Z","trigger":{"received_at":"2020-11-02T19:45:34.736Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"82a0e3eb20c2602186b4ce27e72b2eab88187a89","provider_name":"GitHub","commit":{"body":"","subject":"make
+        codecov work"},"branch":"codecov"}},{"id":"1e9b92c9-aa21-46f0-821b-ba460bd30098","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T18:38:28.586Z","number":459,"state":"created","created_at":"2020-11-02T18:38:28.586Z","trigger":{"received_at":"2020-11-02T18:38:28.524Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"698710848b767ecb11a4e6d73819a1babfd6f7c4","provider_name":"GitHub","commit":{"body":"","subject":"run
+        codecov"},"branch":"codecov"}},{"id":"5ada2fc7-1ee6-45b0-8bd2-2598823d94b6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T04:00:38.120Z","number":458,"state":"created","created_at":"2020-11-02T04:00:38.120Z","trigger":{"received_at":"2020-11-02T04:00:38.114Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"8e9fc756-ae18-49c6-af6c-9925addf8d6b","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-01T04:00:35.613Z","number":457,"state":"created","created_at":"2020-11-01T04:00:35.613Z","trigger":{"received_at":"2020-11-01T04:00:35.607Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"aedfe76a-ddc7-4cc0-9a22-02cd41995f5c","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-31T04:00:15.224Z","number":456,"state":"created","created_at":"2020-10-31T04:00:15.224Z","trigger":{"received_at":"2020-10-31T04:00:15.219Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"d2fcdd5d-8319-4a1e-a346-b8b8b6c3b98d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-30T04:00:15.882Z","number":455,"state":"created","created_at":"2020-10-30T04:00:15.882Z","trigger":{"received_at":"2020-10-30T04:00:15.877Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a8790a20-8983-4d0e-ac50-981974580300","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-29T04:00:47.952Z","number":454,"state":"created","created_at":"2020-10-29T04:00:47.952Z","trigger":{"received_at":"2020-10-29T04:00:47.948Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a9c46710-8ca8-4a51-ac87-2616fa2e3cea","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-28T04:00:48.318Z","number":453,"state":"created","created_at":"2020-10-28T04:00:48.318Z","trigger":{"received_at":"2020-10-28T04:00:48.310Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"2d32987f-2075-4779-a61c-19c6fd70b109","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-27T04:00:13.254Z","number":452,"state":"created","created_at":"2020-10-27T04:00:13.254Z","trigger":{"received_at":"2020-10-27T04:00:13.250Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"ee2c6cd0-bb53-47ee-971b-10ef966f5cfd","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-26T04:00:47.176Z","number":451,"state":"created","created_at":"2020-10-26T04:00:47.176Z","trigger":{"received_at":"2020-10-26T04:00:47.171Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"cf1ffa66-6c33-4618-9999-9b9cb8593112","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-25T04:00:15.433Z","number":450,"state":"created","created_at":"2020-10-25T04:00:15.433Z","trigger":{"received_at":"2020-10-25T04:00:15.428Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/pipeline?limit=30&circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:22 GMT
+      server: nginx
+      set-cookie: ring-session=aW1lTiavOTv2%2FPovqapc3SyTCjKvqtZu4IkhunPkWUnYaNbm27lvkngAqsRRxF%2FlJik0RDMT3ZfOkl5OtbPZQfDsN9uidQ6O3D%2FiQFdwp%2FpStxTfrx1nrP4FKiAU45P2HK9z1rGtyLpGEIigUEYsVjvp7xV7pVVgEYLU2XKyvsNk9Zonx77sFnwrFsJcyc2%2FCHIjcAk5BjGjK7Pkcyz03DYVnhfH2u1QkncY%2FM3QqtU%3D--RPxdW5X4U0xLFbkN8xpA6SYxd%2FxIwUFHUmEL99IjvJk%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:16:31 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-pt65g
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 637aa26e-79a4-44d9-b8dc-8e321079c58b
+      x-route: /api/v2/project/:project-slug/pipeline
+      transfer-encoding: chunked
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":"AARLwwWEcD3JAFho97aMWxXN6OHQo6jNXdxCC-xkVx2CsGjdfr1EPw7FHSrZ43qbhdgS4k87EgrYMIM390plZHVpWMuA6UPdvqKMYiqkUQPTBLM6hLtdPcbrxfY3eg0f6R7BQdJa-WN_","items":[{"id":"9c053b8f-67fc-4543-a6a9-51b9540692f4","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:35:07.224Z","number":469,"state":"created","created_at":"2020-11-03T11:35:07.224Z","trigger":{"received_at":"2020-11-03T11:35:07.173Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"e1f64ee88ff28ee54849fc78d477a8a312fc19b9","provider_name":"GitHub","commit":{"body":"","subject":"update
+        vcr cassettes"},"branch":"master"}},{"id":"ed7335bf-d605-401e-88c0-4cfe57c4af4f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:04:49.739Z","number":468,"state":"created","created_at":"2020-11-03T11:04:49.739Z","trigger":{"received_at":"2020-11-03T11:04:49.683Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"b30f76f4e2eaf553dc37e5ebe067b5b821310805","provider_name":"GitHub","commit":{"body":"","subject":"Increase
+        code coverage and remove git2r"},"branch":"master"}},{"id":"111fb318-b3e9-4c7b-89c9-c475acaffa29","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:54:23.294Z","number":467,"state":"created","created_at":"2020-11-03T10:54:23.294Z","trigger":{"received_at":"2020-11-03T10:54:23.249Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"f06ff0efea65ab6cbd72678de5c27369585aae12","provider_name":"GitHub","commit":{"body":"","subject":"fix
+        path"},"branch":"codecov"}},{"id":"6aa98dbf-68fd-4696-a5eb-6f87d2724fca","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:49:20.887Z","number":466,"state":"created","created_at":"2020-11-03T10:49:20.887Z","trigger":{"received_at":"2020-11-03T10:49:20.841Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"6b523905f047c3da5433d83cc229944b6225d604","provider_name":"GitHub","commit":{"body":"","subject":"use
+        gert::git_clone"},"branch":"codecov"}},{"id":"2b7c55eb-3648-45c0-9d5c-1730a07b3f9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:23:41.378Z","number":465,"state":"created","created_at":"2020-11-03T10:23:41.378Z","trigger":{"received_at":"2020-11-03T10:23:41.338Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"2fcfc53afd6a6b98915d512862bb0aa29ed74917","provider_name":"GitHub","commit":{"body":"","subject":"pass
+        gh token to create_from_github explicitly"},"branch":"codecov"}},{"id":"c7287fec-3a2b-4cc0-be22-bbffceb9cc9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:03:56.341Z","number":464,"state":"created","created_at":"2020-11-03T10:03:56.341Z","trigger":{"received_at":"2020-11-03T10:03:56.297Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"938100642973496fff3836206e4b55aefe491f68","provider_name":"GitHub","commit":{"body":"","subject":"get
+        GH Token on CI conditionally"},"branch":"codecov"}},{"id":"04aba538-5c6b-437b-ac00-bba435bc0e0a","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:45:20.588Z","number":463,"state":"created","created_at":"2020-11-03T09:45:20.588Z","trigger":{"received_at":"2020-11-03T09:45:20.537Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"11af1c77fe233d824d890377c706924b6ab71719","provider_name":"GitHub","commit":{"body":"","subject":"cleanup"},"branch":"codecov"}},{"id":"abfa7482-ad8d-431d-9287-1603580e256d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:29:58.460Z","number":462,"state":"created","created_at":"2020-11-03T09:29:58.460Z","trigger":{"received_at":"2020-11-03T09:29:58.408Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"aff9bc3d2a2ee71f930fe084e5f1d53207ae2cb6","provider_name":"GitHub","commit":{"body":"","subject":"add
+        full coverage"},"branch":"codecov"}},{"id":"cc9f4ccb-ccb0-41a0-b4a0-16ca60f33586","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T04:00:43.140Z","number":461,"state":"created","created_at":"2020-11-03T04:00:43.140Z","trigger":{"received_at":"2020-11-03T04:00:42.592Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"1ae27c25-b610-4e43-bcb7-578ca0a680d6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T19:45:34.774Z","number":460,"state":"created","created_at":"2020-11-02T19:45:34.774Z","trigger":{"received_at":"2020-11-02T19:45:34.736Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"82a0e3eb20c2602186b4ce27e72b2eab88187a89","provider_name":"GitHub","commit":{"body":"","subject":"make
+        codecov work"},"branch":"codecov"}},{"id":"1e9b92c9-aa21-46f0-821b-ba460bd30098","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T18:38:28.586Z","number":459,"state":"created","created_at":"2020-11-02T18:38:28.586Z","trigger":{"received_at":"2020-11-02T18:38:28.524Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"698710848b767ecb11a4e6d73819a1babfd6f7c4","provider_name":"GitHub","commit":{"body":"","subject":"run
+        codecov"},"branch":"codecov"}},{"id":"5ada2fc7-1ee6-45b0-8bd2-2598823d94b6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T04:00:38.120Z","number":458,"state":"created","created_at":"2020-11-02T04:00:38.120Z","trigger":{"received_at":"2020-11-02T04:00:38.114Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"8e9fc756-ae18-49c6-af6c-9925addf8d6b","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-01T04:00:35.613Z","number":457,"state":"created","created_at":"2020-11-01T04:00:35.613Z","trigger":{"received_at":"2020-11-01T04:00:35.607Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"aedfe76a-ddc7-4cc0-9a22-02cd41995f5c","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-31T04:00:15.224Z","number":456,"state":"created","created_at":"2020-10-31T04:00:15.224Z","trigger":{"received_at":"2020-10-31T04:00:15.219Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"d2fcdd5d-8319-4a1e-a346-b8b8b6c3b98d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-30T04:00:15.882Z","number":455,"state":"created","created_at":"2020-10-30T04:00:15.882Z","trigger":{"received_at":"2020-10-30T04:00:15.877Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a8790a20-8983-4d0e-ac50-981974580300","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-29T04:00:47.952Z","number":454,"state":"created","created_at":"2020-10-29T04:00:47.952Z","trigger":{"received_at":"2020-10-29T04:00:47.948Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a9c46710-8ca8-4a51-ac87-2616fa2e3cea","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-28T04:00:48.318Z","number":453,"state":"created","created_at":"2020-10-28T04:00:48.318Z","trigger":{"received_at":"2020-10-28T04:00:48.310Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"2d32987f-2075-4779-a61c-19c6fd70b109","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-27T04:00:13.254Z","number":452,"state":"created","created_at":"2020-10-27T04:00:13.254Z","trigger":{"received_at":"2020-10-27T04:00:13.250Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"ee2c6cd0-bb53-47ee-971b-10ef966f5cfd","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-26T04:00:47.176Z","number":451,"state":"created","created_at":"2020-10-26T04:00:47.176Z","trigger":{"received_at":"2020-10-26T04:00:47.171Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"cf1ffa66-6c33-4618-9999-9b9cb8593112","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-25T04:00:15.433Z","number":450,"state":"created","created_at":"2020-10-25T04:00:15.433Z","trigger":{"received_at":"2020-10-25T04:00:15.428Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/pipeline?limit=30&circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:23 GMT
+      server: nginx
+      set-cookie: ring-session=fPrNdqnhOGJ5n3cN%2FuLbG5%2BwThy9GB9hlmCWp5XBTnw2fbGVeWkuy2RVp8YU30a09CT9lAv35dW4IiAMdJVOH0d4h0HDgIzxkLuXrkm9HXkQ%2FRuPJTpwaW3fsa%2BoP%2FF92%2B9s2wpdk8Zbbn9Pj9wHAEThHPM9VZGdoFLU0oB3ELAZ19aMmyBLFea79CRevFAifLLbdPvXTvpkIBLtbzXL%2FgjSbi9CvuvXaNhLFkQQADc%3D--I6JrIBU%2FhumdsFSdi3kuDvEW%2Fq%2FV417dtpI63OUubYU%3D;Path=/;HttpOnly;Expires=Wed,
+        03 Nov 2021 08:46:43 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-qxdtj
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 0e59daba-54ae-4de6-a69e-f2fa83e47dcb
+      x-route: /api/v2/project/:project-slug/pipeline
+      transfer-encoding: chunked
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":"AARLwwWmmP-FYjDchGMvPKVtHCDYaNRCcVkfpvEhgdAGAdL1LcpiNEwfpnjAvKcna6BJixcwUGTw6GIx48wbTAnS0NlAYyusOtAuA3YrLhwi-k1BXFjo8dLacb9VwBl-9bgufLeW5hqN","items":[{"id":"9c053b8f-67fc-4543-a6a9-51b9540692f4","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:35:07.224Z","number":469,"state":"created","created_at":"2020-11-03T11:35:07.224Z","trigger":{"received_at":"2020-11-03T11:35:07.173Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"e1f64ee88ff28ee54849fc78d477a8a312fc19b9","provider_name":"GitHub","commit":{"body":"","subject":"update
+        vcr cassettes"},"branch":"master"}},{"id":"ed7335bf-d605-401e-88c0-4cfe57c4af4f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:04:49.739Z","number":468,"state":"created","created_at":"2020-11-03T11:04:49.739Z","trigger":{"received_at":"2020-11-03T11:04:49.683Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"b30f76f4e2eaf553dc37e5ebe067b5b821310805","provider_name":"GitHub","commit":{"body":"","subject":"Increase
+        code coverage and remove git2r"},"branch":"master"}},{"id":"111fb318-b3e9-4c7b-89c9-c475acaffa29","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:54:23.294Z","number":467,"state":"created","created_at":"2020-11-03T10:54:23.294Z","trigger":{"received_at":"2020-11-03T10:54:23.249Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"f06ff0efea65ab6cbd72678de5c27369585aae12","provider_name":"GitHub","commit":{"body":"","subject":"fix
+        path"},"branch":"codecov"}},{"id":"6aa98dbf-68fd-4696-a5eb-6f87d2724fca","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:49:20.887Z","number":466,"state":"created","created_at":"2020-11-03T10:49:20.887Z","trigger":{"received_at":"2020-11-03T10:49:20.841Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"6b523905f047c3da5433d83cc229944b6225d604","provider_name":"GitHub","commit":{"body":"","subject":"use
+        gert::git_clone"},"branch":"codecov"}},{"id":"2b7c55eb-3648-45c0-9d5c-1730a07b3f9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:23:41.378Z","number":465,"state":"created","created_at":"2020-11-03T10:23:41.378Z","trigger":{"received_at":"2020-11-03T10:23:41.338Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"2fcfc53afd6a6b98915d512862bb0aa29ed74917","provider_name":"GitHub","commit":{"body":"","subject":"pass
+        gh token to create_from_github explicitly"},"branch":"codecov"}},{"id":"c7287fec-3a2b-4cc0-be22-bbffceb9cc9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:03:56.341Z","number":464,"state":"created","created_at":"2020-11-03T10:03:56.341Z","trigger":{"received_at":"2020-11-03T10:03:56.297Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"938100642973496fff3836206e4b55aefe491f68","provider_name":"GitHub","commit":{"body":"","subject":"get
+        GH Token on CI conditionally"},"branch":"codecov"}},{"id":"04aba538-5c6b-437b-ac00-bba435bc0e0a","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:45:20.588Z","number":463,"state":"created","created_at":"2020-11-03T09:45:20.588Z","trigger":{"received_at":"2020-11-03T09:45:20.537Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"11af1c77fe233d824d890377c706924b6ab71719","provider_name":"GitHub","commit":{"body":"","subject":"cleanup"},"branch":"codecov"}},{"id":"abfa7482-ad8d-431d-9287-1603580e256d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:29:58.460Z","number":462,"state":"created","created_at":"2020-11-03T09:29:58.460Z","trigger":{"received_at":"2020-11-03T09:29:58.408Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"aff9bc3d2a2ee71f930fe084e5f1d53207ae2cb6","provider_name":"GitHub","commit":{"body":"","subject":"add
+        full coverage"},"branch":"codecov"}},{"id":"cc9f4ccb-ccb0-41a0-b4a0-16ca60f33586","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T04:00:43.140Z","number":461,"state":"created","created_at":"2020-11-03T04:00:43.140Z","trigger":{"received_at":"2020-11-03T04:00:42.592Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"1ae27c25-b610-4e43-bcb7-578ca0a680d6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T19:45:34.774Z","number":460,"state":"created","created_at":"2020-11-02T19:45:34.774Z","trigger":{"received_at":"2020-11-02T19:45:34.736Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"82a0e3eb20c2602186b4ce27e72b2eab88187a89","provider_name":"GitHub","commit":{"body":"","subject":"make
+        codecov work"},"branch":"codecov"}},{"id":"1e9b92c9-aa21-46f0-821b-ba460bd30098","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T18:38:28.586Z","number":459,"state":"created","created_at":"2020-11-02T18:38:28.586Z","trigger":{"received_at":"2020-11-02T18:38:28.524Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"698710848b767ecb11a4e6d73819a1babfd6f7c4","provider_name":"GitHub","commit":{"body":"","subject":"run
+        codecov"},"branch":"codecov"}},{"id":"5ada2fc7-1ee6-45b0-8bd2-2598823d94b6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T04:00:38.120Z","number":458,"state":"created","created_at":"2020-11-02T04:00:38.120Z","trigger":{"received_at":"2020-11-02T04:00:38.114Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"8e9fc756-ae18-49c6-af6c-9925addf8d6b","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-01T04:00:35.613Z","number":457,"state":"created","created_at":"2020-11-01T04:00:35.613Z","trigger":{"received_at":"2020-11-01T04:00:35.607Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"aedfe76a-ddc7-4cc0-9a22-02cd41995f5c","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-31T04:00:15.224Z","number":456,"state":"created","created_at":"2020-10-31T04:00:15.224Z","trigger":{"received_at":"2020-10-31T04:00:15.219Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"d2fcdd5d-8319-4a1e-a346-b8b8b6c3b98d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-30T04:00:15.882Z","number":455,"state":"created","created_at":"2020-10-30T04:00:15.882Z","trigger":{"received_at":"2020-10-30T04:00:15.877Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a8790a20-8983-4d0e-ac50-981974580300","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-29T04:00:47.952Z","number":454,"state":"created","created_at":"2020-10-29T04:00:47.952Z","trigger":{"received_at":"2020-10-29T04:00:47.948Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a9c46710-8ca8-4a51-ac87-2616fa2e3cea","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-28T04:00:48.318Z","number":453,"state":"created","created_at":"2020-10-28T04:00:48.318Z","trigger":{"received_at":"2020-10-28T04:00:48.310Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"2d32987f-2075-4779-a61c-19c6fd70b109","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-27T04:00:13.254Z","number":452,"state":"created","created_at":"2020-10-27T04:00:13.254Z","trigger":{"received_at":"2020-10-27T04:00:13.250Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"ee2c6cd0-bb53-47ee-971b-10ef966f5cfd","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-26T04:00:47.176Z","number":451,"state":"created","created_at":"2020-10-26T04:00:47.176Z","trigger":{"received_at":"2020-10-26T04:00:47.171Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"cf1ffa66-6c33-4618-9999-9b9cb8593112","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-25T04:00:15.433Z","number":450,"state":"created","created_at":"2020-10-25T04:00:15.433Z","trigger":{"received_at":"2020-10-25T04:00:15.428Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/pipeline?limit=30&circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:23 GMT
+      server: nginx
+      set-cookie: ring-session=BVBRNzSq1qsNwLx3K%2FB7%2BbjHIFsUYHP2vp2AZvKkRNejSa0e595fLRJGGQCbLRf97dFqxxoSxcuiPwdNR4V6fwAqarRJTTYXTqvbOEWLcA4QnHU4IaSXZBl7kUxtlnFrcBx4C9zUPQgvr5uNAfrZ%2B%2Bve9VW56UDrgyFzpifZ2GPV7saxewgvF0X1NKI%2Fqja0xGP0tsxZpArtYOkgnap4vbK%2Brc%2BNKy5Z96ZhXciyBuU%3D--MexgiCcI0A%2B%2F4PYiFUKX%2BhdaFOoN1q1ClyhH%2BpDqdd0%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:18:59 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-kgzpn
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: d41f8178-5ce3-4262-acb7-f6a3dcf25e83
+      x-route: /api/v2/project/:project-slug/pipeline
+      transfer-encoding: chunked
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":"AARLwwXtmOrhD-EzP1Tx-7S-xPokVMK9wse56Clz-U5wGMOr6ZaYOqtW24jKlwKRef-Jyql0QknfrZlT0XTUn6RAjk-n9IqoNa_Set7R3lwDet5_ZqrmzUURAE6RCJNU5vXxbpqrf_JK","items":[{"id":"9c053b8f-67fc-4543-a6a9-51b9540692f4","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:35:07.224Z","number":469,"state":"created","created_at":"2020-11-03T11:35:07.224Z","trigger":{"received_at":"2020-11-03T11:35:07.173Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"e1f64ee88ff28ee54849fc78d477a8a312fc19b9","provider_name":"GitHub","commit":{"body":"","subject":"update
+        vcr cassettes"},"branch":"master"}},{"id":"ed7335bf-d605-401e-88c0-4cfe57c4af4f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:04:49.739Z","number":468,"state":"created","created_at":"2020-11-03T11:04:49.739Z","trigger":{"received_at":"2020-11-03T11:04:49.683Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"b30f76f4e2eaf553dc37e5ebe067b5b821310805","provider_name":"GitHub","commit":{"body":"","subject":"Increase
+        code coverage and remove git2r"},"branch":"master"}},{"id":"111fb318-b3e9-4c7b-89c9-c475acaffa29","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:54:23.294Z","number":467,"state":"created","created_at":"2020-11-03T10:54:23.294Z","trigger":{"received_at":"2020-11-03T10:54:23.249Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"f06ff0efea65ab6cbd72678de5c27369585aae12","provider_name":"GitHub","commit":{"body":"","subject":"fix
+        path"},"branch":"codecov"}},{"id":"6aa98dbf-68fd-4696-a5eb-6f87d2724fca","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:49:20.887Z","number":466,"state":"created","created_at":"2020-11-03T10:49:20.887Z","trigger":{"received_at":"2020-11-03T10:49:20.841Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"6b523905f047c3da5433d83cc229944b6225d604","provider_name":"GitHub","commit":{"body":"","subject":"use
+        gert::git_clone"},"branch":"codecov"}},{"id":"2b7c55eb-3648-45c0-9d5c-1730a07b3f9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:23:41.378Z","number":465,"state":"created","created_at":"2020-11-03T10:23:41.378Z","trigger":{"received_at":"2020-11-03T10:23:41.338Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"2fcfc53afd6a6b98915d512862bb0aa29ed74917","provider_name":"GitHub","commit":{"body":"","subject":"pass
+        gh token to create_from_github explicitly"},"branch":"codecov"}},{"id":"c7287fec-3a2b-4cc0-be22-bbffceb9cc9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:03:56.341Z","number":464,"state":"created","created_at":"2020-11-03T10:03:56.341Z","trigger":{"received_at":"2020-11-03T10:03:56.297Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"938100642973496fff3836206e4b55aefe491f68","provider_name":"GitHub","commit":{"body":"","subject":"get
+        GH Token on CI conditionally"},"branch":"codecov"}},{"id":"04aba538-5c6b-437b-ac00-bba435bc0e0a","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:45:20.588Z","number":463,"state":"created","created_at":"2020-11-03T09:45:20.588Z","trigger":{"received_at":"2020-11-03T09:45:20.537Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"11af1c77fe233d824d890377c706924b6ab71719","provider_name":"GitHub","commit":{"body":"","subject":"cleanup"},"branch":"codecov"}},{"id":"abfa7482-ad8d-431d-9287-1603580e256d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:29:58.460Z","number":462,"state":"created","created_at":"2020-11-03T09:29:58.460Z","trigger":{"received_at":"2020-11-03T09:29:58.408Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"aff9bc3d2a2ee71f930fe084e5f1d53207ae2cb6","provider_name":"GitHub","commit":{"body":"","subject":"add
+        full coverage"},"branch":"codecov"}},{"id":"cc9f4ccb-ccb0-41a0-b4a0-16ca60f33586","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T04:00:43.140Z","number":461,"state":"created","created_at":"2020-11-03T04:00:43.140Z","trigger":{"received_at":"2020-11-03T04:00:42.592Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"1ae27c25-b610-4e43-bcb7-578ca0a680d6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T19:45:34.774Z","number":460,"state":"created","created_at":"2020-11-02T19:45:34.774Z","trigger":{"received_at":"2020-11-02T19:45:34.736Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"82a0e3eb20c2602186b4ce27e72b2eab88187a89","provider_name":"GitHub","commit":{"body":"","subject":"make
+        codecov work"},"branch":"codecov"}},{"id":"1e9b92c9-aa21-46f0-821b-ba460bd30098","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T18:38:28.586Z","number":459,"state":"created","created_at":"2020-11-02T18:38:28.586Z","trigger":{"received_at":"2020-11-02T18:38:28.524Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"698710848b767ecb11a4e6d73819a1babfd6f7c4","provider_name":"GitHub","commit":{"body":"","subject":"run
+        codecov"},"branch":"codecov"}},{"id":"5ada2fc7-1ee6-45b0-8bd2-2598823d94b6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T04:00:38.120Z","number":458,"state":"created","created_at":"2020-11-02T04:00:38.120Z","trigger":{"received_at":"2020-11-02T04:00:38.114Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"8e9fc756-ae18-49c6-af6c-9925addf8d6b","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-01T04:00:35.613Z","number":457,"state":"created","created_at":"2020-11-01T04:00:35.613Z","trigger":{"received_at":"2020-11-01T04:00:35.607Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"aedfe76a-ddc7-4cc0-9a22-02cd41995f5c","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-31T04:00:15.224Z","number":456,"state":"created","created_at":"2020-10-31T04:00:15.224Z","trigger":{"received_at":"2020-10-31T04:00:15.219Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"d2fcdd5d-8319-4a1e-a346-b8b8b6c3b98d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-30T04:00:15.882Z","number":455,"state":"created","created_at":"2020-10-30T04:00:15.882Z","trigger":{"received_at":"2020-10-30T04:00:15.877Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a8790a20-8983-4d0e-ac50-981974580300","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-29T04:00:47.952Z","number":454,"state":"created","created_at":"2020-10-29T04:00:47.952Z","trigger":{"received_at":"2020-10-29T04:00:47.948Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a9c46710-8ca8-4a51-ac87-2616fa2e3cea","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-28T04:00:48.318Z","number":453,"state":"created","created_at":"2020-10-28T04:00:48.318Z","trigger":{"received_at":"2020-10-28T04:00:48.310Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"2d32987f-2075-4779-a61c-19c6fd70b109","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-27T04:00:13.254Z","number":452,"state":"created","created_at":"2020-10-27T04:00:13.254Z","trigger":{"received_at":"2020-10-27T04:00:13.250Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"ee2c6cd0-bb53-47ee-971b-10ef966f5cfd","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-26T04:00:47.176Z","number":451,"state":"created","created_at":"2020-10-26T04:00:47.176Z","trigger":{"received_at":"2020-10-26T04:00:47.171Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"cf1ffa66-6c33-4618-9999-9b9cb8593112","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-25T04:00:15.433Z","number":450,"state":"created","created_at":"2020-10-25T04:00:15.433Z","trigger":{"received_at":"2020-10-25T04:00:15.428Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/pipeline?limit=30&circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:23 GMT
+      server: nginx
+      set-cookie: ring-session=9mURW8Mg1akBBoMJ%2BVU3IoONLK5M7tq%2BTqYnEfXkqBcZiEQe7f%2F3Gw1o6LLMT%2FmX5JlGJLKyR5WbxKmRS9Ta4HI9oAqp3muONCR0FcBMQERYAamWCd2IXXacCsOCrDA%2FVTrprRo4y66laCRb4%2B96d%2FfRgjRGSlzqUxVzcX1k6cRGKYin%2BL4CHkOTAComZ%2BAaIHPNGwPFC0d0L6J1KfCCZQ%2BRsyPCOJR5Q3m2DtKLzjA%3D--8QxNO0r90G4Nv5JH3JyYu52W2FN84Pl5hemQdJT%2B7X8%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:12:18 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-k2bj6
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 260651d6-e620-48eb-abe0-e1771308bf9e
+      x-route: /api/v2/project/:project-slug/pipeline
+      transfer-encoding: chunked
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":"AARLwwUVKJ45iHqKncX5DUusXHr9Q1Y1z7NxTH79zGDpMOI37XXhw9cnCPj91fv66334ELhkR2dGD8fO0sdb_Gu0rE_OZvUTYQYD5oSmH5JMbk8-BzthcyT9x4wJSUt8B6VkG1nuLHxt","items":[{"id":"9c053b8f-67fc-4543-a6a9-51b9540692f4","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:35:07.224Z","number":469,"state":"created","created_at":"2020-11-03T11:35:07.224Z","trigger":{"received_at":"2020-11-03T11:35:07.173Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"e1f64ee88ff28ee54849fc78d477a8a312fc19b9","provider_name":"GitHub","commit":{"body":"","subject":"update
+        vcr cassettes"},"branch":"master"}},{"id":"ed7335bf-d605-401e-88c0-4cfe57c4af4f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:04:49.739Z","number":468,"state":"created","created_at":"2020-11-03T11:04:49.739Z","trigger":{"received_at":"2020-11-03T11:04:49.683Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"b30f76f4e2eaf553dc37e5ebe067b5b821310805","provider_name":"GitHub","commit":{"body":"","subject":"Increase
+        code coverage and remove git2r"},"branch":"master"}},{"id":"111fb318-b3e9-4c7b-89c9-c475acaffa29","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:54:23.294Z","number":467,"state":"created","created_at":"2020-11-03T10:54:23.294Z","trigger":{"received_at":"2020-11-03T10:54:23.249Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"f06ff0efea65ab6cbd72678de5c27369585aae12","provider_name":"GitHub","commit":{"body":"","subject":"fix
+        path"},"branch":"codecov"}},{"id":"6aa98dbf-68fd-4696-a5eb-6f87d2724fca","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:49:20.887Z","number":466,"state":"created","created_at":"2020-11-03T10:49:20.887Z","trigger":{"received_at":"2020-11-03T10:49:20.841Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"6b523905f047c3da5433d83cc229944b6225d604","provider_name":"GitHub","commit":{"body":"","subject":"use
+        gert::git_clone"},"branch":"codecov"}},{"id":"2b7c55eb-3648-45c0-9d5c-1730a07b3f9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:23:41.378Z","number":465,"state":"created","created_at":"2020-11-03T10:23:41.378Z","trigger":{"received_at":"2020-11-03T10:23:41.338Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"2fcfc53afd6a6b98915d512862bb0aa29ed74917","provider_name":"GitHub","commit":{"body":"","subject":"pass
+        gh token to create_from_github explicitly"},"branch":"codecov"}},{"id":"c7287fec-3a2b-4cc0-be22-bbffceb9cc9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:03:56.341Z","number":464,"state":"created","created_at":"2020-11-03T10:03:56.341Z","trigger":{"received_at":"2020-11-03T10:03:56.297Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"938100642973496fff3836206e4b55aefe491f68","provider_name":"GitHub","commit":{"body":"","subject":"get
+        GH Token on CI conditionally"},"branch":"codecov"}},{"id":"04aba538-5c6b-437b-ac00-bba435bc0e0a","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:45:20.588Z","number":463,"state":"created","created_at":"2020-11-03T09:45:20.588Z","trigger":{"received_at":"2020-11-03T09:45:20.537Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"11af1c77fe233d824d890377c706924b6ab71719","provider_name":"GitHub","commit":{"body":"","subject":"cleanup"},"branch":"codecov"}},{"id":"abfa7482-ad8d-431d-9287-1603580e256d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:29:58.460Z","number":462,"state":"created","created_at":"2020-11-03T09:29:58.460Z","trigger":{"received_at":"2020-11-03T09:29:58.408Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"aff9bc3d2a2ee71f930fe084e5f1d53207ae2cb6","provider_name":"GitHub","commit":{"body":"","subject":"add
+        full coverage"},"branch":"codecov"}},{"id":"cc9f4ccb-ccb0-41a0-b4a0-16ca60f33586","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T04:00:43.140Z","number":461,"state":"created","created_at":"2020-11-03T04:00:43.140Z","trigger":{"received_at":"2020-11-03T04:00:42.592Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"1ae27c25-b610-4e43-bcb7-578ca0a680d6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T19:45:34.774Z","number":460,"state":"created","created_at":"2020-11-02T19:45:34.774Z","trigger":{"received_at":"2020-11-02T19:45:34.736Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"82a0e3eb20c2602186b4ce27e72b2eab88187a89","provider_name":"GitHub","commit":{"body":"","subject":"make
+        codecov work"},"branch":"codecov"}},{"id":"1e9b92c9-aa21-46f0-821b-ba460bd30098","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T18:38:28.586Z","number":459,"state":"created","created_at":"2020-11-02T18:38:28.586Z","trigger":{"received_at":"2020-11-02T18:38:28.524Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"698710848b767ecb11a4e6d73819a1babfd6f7c4","provider_name":"GitHub","commit":{"body":"","subject":"run
+        codecov"},"branch":"codecov"}},{"id":"5ada2fc7-1ee6-45b0-8bd2-2598823d94b6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T04:00:38.120Z","number":458,"state":"created","created_at":"2020-11-02T04:00:38.120Z","trigger":{"received_at":"2020-11-02T04:00:38.114Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"8e9fc756-ae18-49c6-af6c-9925addf8d6b","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-01T04:00:35.613Z","number":457,"state":"created","created_at":"2020-11-01T04:00:35.613Z","trigger":{"received_at":"2020-11-01T04:00:35.607Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"aedfe76a-ddc7-4cc0-9a22-02cd41995f5c","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-31T04:00:15.224Z","number":456,"state":"created","created_at":"2020-10-31T04:00:15.224Z","trigger":{"received_at":"2020-10-31T04:00:15.219Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"d2fcdd5d-8319-4a1e-a346-b8b8b6c3b98d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-30T04:00:15.882Z","number":455,"state":"created","created_at":"2020-10-30T04:00:15.882Z","trigger":{"received_at":"2020-10-30T04:00:15.877Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a8790a20-8983-4d0e-ac50-981974580300","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-29T04:00:47.952Z","number":454,"state":"created","created_at":"2020-10-29T04:00:47.952Z","trigger":{"received_at":"2020-10-29T04:00:47.948Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a9c46710-8ca8-4a51-ac87-2616fa2e3cea","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-28T04:00:48.318Z","number":453,"state":"created","created_at":"2020-10-28T04:00:48.318Z","trigger":{"received_at":"2020-10-28T04:00:48.310Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"2d32987f-2075-4779-a61c-19c6fd70b109","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-27T04:00:13.254Z","number":452,"state":"created","created_at":"2020-10-27T04:00:13.254Z","trigger":{"received_at":"2020-10-27T04:00:13.250Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"ee2c6cd0-bb53-47ee-971b-10ef966f5cfd","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-26T04:00:47.176Z","number":451,"state":"created","created_at":"2020-10-26T04:00:47.176Z","trigger":{"received_at":"2020-10-26T04:00:47.171Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"cf1ffa66-6c33-4618-9999-9b9cb8593112","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-25T04:00:15.433Z","number":450,"state":"created","created_at":"2020-10-25T04:00:15.433Z","trigger":{"received_at":"2020-10-25T04:00:15.428Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/pipeline?limit=30&circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:23 GMT
+      server: nginx
+      set-cookie: ring-session=1%2FvldKf7SQ4A2F%2F01%2FPxakr8ADbpFEeUBHlMmtz%2BHyIcHmzn0Vf3aycLoxjGSuuxRvwZ64zWkFn4W3R%2FG39G1LKL9iQQzF69AQqjapG42tTFDy4aAlPVYpVxHSZQ0uJq%2B5h0YkwybPXEU6GhskWjxkl56%2FmlydG2UmoVDAgyrpYPylgSusAcb2WaNGR4X%2B1APGfeXW6xBtvCrtlBxB6Z%2B%2FcOtW%2FJv09uZO8f4szE58s%3D--owppfhWGkJPZidIdPDwUlrQfPjP8Q42u3XdTIyULHIg%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 21:11:40 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-jztvv
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: e3a7af7d-18cb-44d7-8c69-4dfa437137ce
+      x-route: /api/v2/project/:project-slug/pipeline
+      transfer-encoding: chunked
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":"AARLwwVg-OTlAcyJWyiKt7Kniaiu6ASVlE4peXJYrAEa-Sh9XtQ3--6fE87m6Qn2kHqhDMd8MVpzq63CNZBxOk5BIt9CUMmvAk9xIhgejxX2asiORCGbGaGQRLfyDzZzfBK09hn5x_4j","items":[{"id":"9c053b8f-67fc-4543-a6a9-51b9540692f4","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:35:07.224Z","number":469,"state":"created","created_at":"2020-11-03T11:35:07.224Z","trigger":{"received_at":"2020-11-03T11:35:07.173Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"e1f64ee88ff28ee54849fc78d477a8a312fc19b9","provider_name":"GitHub","commit":{"body":"","subject":"update
+        vcr cassettes"},"branch":"master"}},{"id":"ed7335bf-d605-401e-88c0-4cfe57c4af4f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:04:49.739Z","number":468,"state":"created","created_at":"2020-11-03T11:04:49.739Z","trigger":{"received_at":"2020-11-03T11:04:49.683Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"b30f76f4e2eaf553dc37e5ebe067b5b821310805","provider_name":"GitHub","commit":{"body":"","subject":"Increase
+        code coverage and remove git2r"},"branch":"master"}},{"id":"111fb318-b3e9-4c7b-89c9-c475acaffa29","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:54:23.294Z","number":467,"state":"created","created_at":"2020-11-03T10:54:23.294Z","trigger":{"received_at":"2020-11-03T10:54:23.249Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"f06ff0efea65ab6cbd72678de5c27369585aae12","provider_name":"GitHub","commit":{"body":"","subject":"fix
+        path"},"branch":"codecov"}},{"id":"6aa98dbf-68fd-4696-a5eb-6f87d2724fca","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:49:20.887Z","number":466,"state":"created","created_at":"2020-11-03T10:49:20.887Z","trigger":{"received_at":"2020-11-03T10:49:20.841Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"6b523905f047c3da5433d83cc229944b6225d604","provider_name":"GitHub","commit":{"body":"","subject":"use
+        gert::git_clone"},"branch":"codecov"}},{"id":"2b7c55eb-3648-45c0-9d5c-1730a07b3f9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:23:41.378Z","number":465,"state":"created","created_at":"2020-11-03T10:23:41.378Z","trigger":{"received_at":"2020-11-03T10:23:41.338Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"2fcfc53afd6a6b98915d512862bb0aa29ed74917","provider_name":"GitHub","commit":{"body":"","subject":"pass
+        gh token to create_from_github explicitly"},"branch":"codecov"}},{"id":"c7287fec-3a2b-4cc0-be22-bbffceb9cc9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:03:56.341Z","number":464,"state":"created","created_at":"2020-11-03T10:03:56.341Z","trigger":{"received_at":"2020-11-03T10:03:56.297Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"938100642973496fff3836206e4b55aefe491f68","provider_name":"GitHub","commit":{"body":"","subject":"get
+        GH Token on CI conditionally"},"branch":"codecov"}},{"id":"04aba538-5c6b-437b-ac00-bba435bc0e0a","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:45:20.588Z","number":463,"state":"created","created_at":"2020-11-03T09:45:20.588Z","trigger":{"received_at":"2020-11-03T09:45:20.537Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"11af1c77fe233d824d890377c706924b6ab71719","provider_name":"GitHub","commit":{"body":"","subject":"cleanup"},"branch":"codecov"}},{"id":"abfa7482-ad8d-431d-9287-1603580e256d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:29:58.460Z","number":462,"state":"created","created_at":"2020-11-03T09:29:58.460Z","trigger":{"received_at":"2020-11-03T09:29:58.408Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"aff9bc3d2a2ee71f930fe084e5f1d53207ae2cb6","provider_name":"GitHub","commit":{"body":"","subject":"add
+        full coverage"},"branch":"codecov"}},{"id":"cc9f4ccb-ccb0-41a0-b4a0-16ca60f33586","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T04:00:43.140Z","number":461,"state":"created","created_at":"2020-11-03T04:00:43.140Z","trigger":{"received_at":"2020-11-03T04:00:42.592Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"1ae27c25-b610-4e43-bcb7-578ca0a680d6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T19:45:34.774Z","number":460,"state":"created","created_at":"2020-11-02T19:45:34.774Z","trigger":{"received_at":"2020-11-02T19:45:34.736Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"82a0e3eb20c2602186b4ce27e72b2eab88187a89","provider_name":"GitHub","commit":{"body":"","subject":"make
+        codecov work"},"branch":"codecov"}},{"id":"1e9b92c9-aa21-46f0-821b-ba460bd30098","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T18:38:28.586Z","number":459,"state":"created","created_at":"2020-11-02T18:38:28.586Z","trigger":{"received_at":"2020-11-02T18:38:28.524Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"698710848b767ecb11a4e6d73819a1babfd6f7c4","provider_name":"GitHub","commit":{"body":"","subject":"run
+        codecov"},"branch":"codecov"}},{"id":"5ada2fc7-1ee6-45b0-8bd2-2598823d94b6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T04:00:38.120Z","number":458,"state":"created","created_at":"2020-11-02T04:00:38.120Z","trigger":{"received_at":"2020-11-02T04:00:38.114Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"8e9fc756-ae18-49c6-af6c-9925addf8d6b","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-01T04:00:35.613Z","number":457,"state":"created","created_at":"2020-11-01T04:00:35.613Z","trigger":{"received_at":"2020-11-01T04:00:35.607Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"aedfe76a-ddc7-4cc0-9a22-02cd41995f5c","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-31T04:00:15.224Z","number":456,"state":"created","created_at":"2020-10-31T04:00:15.224Z","trigger":{"received_at":"2020-10-31T04:00:15.219Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"d2fcdd5d-8319-4a1e-a346-b8b8b6c3b98d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-30T04:00:15.882Z","number":455,"state":"created","created_at":"2020-10-30T04:00:15.882Z","trigger":{"received_at":"2020-10-30T04:00:15.877Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a8790a20-8983-4d0e-ac50-981974580300","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-29T04:00:47.952Z","number":454,"state":"created","created_at":"2020-10-29T04:00:47.952Z","trigger":{"received_at":"2020-10-29T04:00:47.948Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a9c46710-8ca8-4a51-ac87-2616fa2e3cea","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-28T04:00:48.318Z","number":453,"state":"created","created_at":"2020-10-28T04:00:48.318Z","trigger":{"received_at":"2020-10-28T04:00:48.310Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"2d32987f-2075-4779-a61c-19c6fd70b109","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-27T04:00:13.254Z","number":452,"state":"created","created_at":"2020-10-27T04:00:13.254Z","trigger":{"received_at":"2020-10-27T04:00:13.250Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"ee2c6cd0-bb53-47ee-971b-10ef966f5cfd","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-26T04:00:47.176Z","number":451,"state":"created","created_at":"2020-10-26T04:00:47.176Z","trigger":{"received_at":"2020-10-26T04:00:47.171Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"cf1ffa66-6c33-4618-9999-9b9cb8593112","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-25T04:00:15.433Z","number":450,"state":"created","created_at":"2020-10-25T04:00:15.433Z","trigger":{"received_at":"2020-10-25T04:00:15.428Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/pipeline?limit=30&circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:24 GMT
+      server: nginx
+      set-cookie: ring-session=SZhyTAE7gW0rYBqa8u%2BL%2BoQEjFIQgrlvUqPPPWEMxhW6%2FQEDY5AiFHDHRwAHNBc17DjAGpTC5cvrEXG2eCY%2B2Flv2j4SCV6vae%2BSBSfkrOSXBSfTWv8h4PU2dDEjWyOTOUXqBjseZX1f1cUyBVqJ4F9C2esEdZ1qITwkQcb5Lb7lf7PROy42r39ehvM5TQqNOgHyvwxCfe02JywvBXTCiTvedqi3GT%2F09jDmTVf2v%2Fc%3D--L2raJCEZRa6eZtdkJ2DgvaeoXnug46YbbA6e6OjWYdA%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:10:13 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-dss9g
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: b5e83292-4144-437b-8a02-3ba0b07a5480
+      x-route: /api/v2/project/:project-slug/pipeline
+      content-length: '2009'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":"AARLwwVCHsnWJulbxCUk6gG1tPqXzhHeRiA_YJinfhiL1zwWQC7HsKMVdvhVO6TgzO61jv6QZulWzBcA_K24yYJQBX2WK8IriYqjS82PhqQrHHLekBmtRpSBLjVMizrafFMQlufl5mS2","items":[{"id":"9c053b8f-67fc-4543-a6a9-51b9540692f4","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:35:07.224Z","number":469,"state":"created","created_at":"2020-11-03T11:35:07.224Z","trigger":{"received_at":"2020-11-03T11:35:07.173Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"e1f64ee88ff28ee54849fc78d477a8a312fc19b9","provider_name":"GitHub","commit":{"body":"","subject":"update
+        vcr cassettes"},"branch":"master"}},{"id":"ed7335bf-d605-401e-88c0-4cfe57c4af4f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T11:04:49.739Z","number":468,"state":"created","created_at":"2020-11-03T11:04:49.739Z","trigger":{"received_at":"2020-11-03T11:04:49.683Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"b30f76f4e2eaf553dc37e5ebe067b5b821310805","provider_name":"GitHub","commit":{"body":"","subject":"Increase
+        code coverage and remove git2r"},"branch":"master"}},{"id":"111fb318-b3e9-4c7b-89c9-c475acaffa29","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:54:23.294Z","number":467,"state":"created","created_at":"2020-11-03T10:54:23.294Z","trigger":{"received_at":"2020-11-03T10:54:23.249Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"f06ff0efea65ab6cbd72678de5c27369585aae12","provider_name":"GitHub","commit":{"body":"","subject":"fix
+        path"},"branch":"codecov"}},{"id":"6aa98dbf-68fd-4696-a5eb-6f87d2724fca","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:49:20.887Z","number":466,"state":"created","created_at":"2020-11-03T10:49:20.887Z","trigger":{"received_at":"2020-11-03T10:49:20.841Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"6b523905f047c3da5433d83cc229944b6225d604","provider_name":"GitHub","commit":{"body":"","subject":"use
+        gert::git_clone"},"branch":"codecov"}},{"id":"2b7c55eb-3648-45c0-9d5c-1730a07b3f9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:23:41.378Z","number":465,"state":"created","created_at":"2020-11-03T10:23:41.378Z","trigger":{"received_at":"2020-11-03T10:23:41.338Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"2fcfc53afd6a6b98915d512862bb0aa29ed74917","provider_name":"GitHub","commit":{"body":"","subject":"pass
+        gh token to create_from_github explicitly"},"branch":"codecov"}},{"id":"c7287fec-3a2b-4cc0-be22-bbffceb9cc9f","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T10:03:56.341Z","number":464,"state":"created","created_at":"2020-11-03T10:03:56.341Z","trigger":{"received_at":"2020-11-03T10:03:56.297Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"938100642973496fff3836206e4b55aefe491f68","provider_name":"GitHub","commit":{"body":"","subject":"get
+        GH Token on CI conditionally"},"branch":"codecov"}},{"id":"04aba538-5c6b-437b-ac00-bba435bc0e0a","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:45:20.588Z","number":463,"state":"created","created_at":"2020-11-03T09:45:20.588Z","trigger":{"received_at":"2020-11-03T09:45:20.537Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"11af1c77fe233d824d890377c706924b6ab71719","provider_name":"GitHub","commit":{"body":"","subject":"cleanup"},"branch":"codecov"}},{"id":"abfa7482-ad8d-431d-9287-1603580e256d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T09:29:58.460Z","number":462,"state":"created","created_at":"2020-11-03T09:29:58.460Z","trigger":{"received_at":"2020-11-03T09:29:58.408Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"aff9bc3d2a2ee71f930fe084e5f1d53207ae2cb6","provider_name":"GitHub","commit":{"body":"","subject":"add
+        full coverage"},"branch":"codecov"}},{"id":"cc9f4ccb-ccb0-41a0-b4a0-16ca60f33586","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-03T04:00:43.140Z","number":461,"state":"created","created_at":"2020-11-03T04:00:43.140Z","trigger":{"received_at":"2020-11-03T04:00:42.592Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"1ae27c25-b610-4e43-bcb7-578ca0a680d6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T19:45:34.774Z","number":460,"state":"created","created_at":"2020-11-02T19:45:34.774Z","trigger":{"received_at":"2020-11-02T19:45:34.736Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"82a0e3eb20c2602186b4ce27e72b2eab88187a89","provider_name":"GitHub","commit":{"body":"","subject":"make
+        codecov work"},"branch":"codecov"}},{"id":"1e9b92c9-aa21-46f0-821b-ba460bd30098","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T18:38:28.586Z","number":459,"state":"created","created_at":"2020-11-02T18:38:28.586Z","trigger":{"received_at":"2020-11-02T18:38:28.524Z","type":"webhook","actor":{"login":"pat-s","avatar_url":"https://avatars3.githubusercontent.com/u/8430564?v=4"}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"698710848b767ecb11a4e6d73819a1babfd6f7c4","provider_name":"GitHub","commit":{"body":"","subject":"run
+        codecov"},"branch":"codecov"}},{"id":"5ada2fc7-1ee6-45b0-8bd2-2598823d94b6","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-02T04:00:38.120Z","number":458,"state":"created","created_at":"2020-11-02T04:00:38.120Z","trigger":{"received_at":"2020-11-02T04:00:38.114Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"8e9fc756-ae18-49c6-af6c-9925addf8d6b","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-11-01T04:00:35.613Z","number":457,"state":"created","created_at":"2020-11-01T04:00:35.613Z","trigger":{"received_at":"2020-11-01T04:00:35.607Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"aedfe76a-ddc7-4cc0-9a22-02cd41995f5c","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-31T04:00:15.224Z","number":456,"state":"created","created_at":"2020-10-31T04:00:15.224Z","trigger":{"received_at":"2020-10-31T04:00:15.219Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"d2fcdd5d-8319-4a1e-a346-b8b8b6c3b98d","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-30T04:00:15.882Z","number":455,"state":"created","created_at":"2020-10-30T04:00:15.882Z","trigger":{"received_at":"2020-10-30T04:00:15.877Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a8790a20-8983-4d0e-ac50-981974580300","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-29T04:00:47.952Z","number":454,"state":"created","created_at":"2020-10-29T04:00:47.952Z","trigger":{"received_at":"2020-10-29T04:00:47.948Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"a9c46710-8ca8-4a51-ac87-2616fa2e3cea","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-28T04:00:48.318Z","number":453,"state":"created","created_at":"2020-10-28T04:00:48.318Z","trigger":{"received_at":"2020-10-28T04:00:48.310Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"2d32987f-2075-4779-a61c-19c6fd70b109","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-27T04:00:13.254Z","number":452,"state":"created","created_at":"2020-10-27T04:00:13.254Z","trigger":{"received_at":"2020-10-27T04:00:13.250Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"ee2c6cd0-bb53-47ee-971b-10ef966f5cfd","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-26T04:00:47.176Z","number":451,"state":"created","created_at":"2020-10-26T04:00:47.176Z","trigger":{"received_at":"2020-10-26T04:00:47.171Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}},{"id":"cf1ffa66-6c33-4618-9999-9b9cb8593112","errors":[],"project_slug":"gh/ropensci/circle","updated_at":"2020-10-25T04:00:15.433Z","number":450,"state":"created","created_at":"2020-10-25T04:00:15.433Z","trigger":{"received_at":"2020-10-25T04:00:15.428Z","type":"schedule","actor":{"login":"Scheduled","avatar_url":null}},"vcs":{"origin_repository_url":"https://github.com/ropensci/circle","target_repository_url":"https://github.com/ropensci/circle","revision":"74174fead6bf47d9c06ebefdbff70558f780d90c","provider_name":"GitHub","branch":"master"}}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/pipeline/9c053b8f-67fc-4543-a6a9-51b9540692f4/workflow?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:24 GMT
+      server: nginx
+      set-cookie: ring-session=2euYqcP0HMS2y5738gCVemXV%2BVM097yMTAgZv%2FKSJkbIh5Sh3Mx3jhd9CbSdmhypk4B2FbLpzSpCZOHXl3pVNB%2FISrqiv75FHvBSsgPEQIITa%2FGxfT1ooAV%2BDImXOwU%2FH8aTiJLXbV3mQ0H9%2FhUGk%2Bqvugax5%2FamYKvjwQicgsU1EP5KC6pcKHzq9do7f8rMDZT11qQ%2B%2BHMaJszXF%2B%2BnU7VIxy5ulBMfVgjkPVVw9F0%3D--nxvkX9MOmp%2BiftxChjRMBHJKllBY3PX5lqKCSFr2dwk%3D;Path=/;HttpOnly;Expires=Wed,
+        03 Nov 2021 03:36:50 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-8skp4
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 225debab-8e44-4e4c-85d9-76a2f8c2b22f
+      x-route: /api/v2/pipeline/:pipeline-id/workflow
+      content-length: '263'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":null,"items":[{"pipeline_id":"9c053b8f-67fc-4543-a6a9-51b9540692f4","id":"fc3a4ac2-8cf7-44c6-bda0-284592a4bccc","name":"build","project_slug":"gh/ropensci/circle","status":"success","started_by":"9c373331-d0f7-45e1-afe6-4a5c75e00d10","pipeline_number":469,"created_at":"2020-11-03T11:35:07Z","stopped_at":"2020-11-03T11:36:35Z"}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/pipeline/ed7335bf-d605-401e-88c0-4cfe57c4af4f/workflow?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:24 GMT
+      server: nginx
+      set-cookie: ring-session=fIJpUKnHj6lo20NYG%2BhFupsXYZAZT6%2FWReVDJKA6TSK%2F%2FuVawBy3gaeJlaFwRatIAGRWkh640DMfiXNwPyfBFmZ2WLA0Xvut88KJDL637hyXZIah%2FJZuXCp2Dt2Bemh7CSbd5vSXAs%2F8KNUy59ZMpJ1mD%2FHkbNhQBr5locIqaddGTCCkNm4OlU69Q0XDPJsEdk7jgXpjz237Nqx6S2fWASTX9ukAFTRw%2FgP5NllUj1k%3D--MXy4YxUi%2BHg5rNmp5ne8OWMl8TCCTLHzfT84o88tb9c%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:16:59 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-j7pml
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 198e457f-d2f0-4281-a1a3-c2f186f6846f
+      x-route: /api/v2/pipeline/:pipeline-id/workflow
+      content-length: '264'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":null,"items":[{"pipeline_id":"ed7335bf-d605-401e-88c0-4cfe57c4af4f","id":"f3b6786d-0a0a-41a0-8dfb-b661d0692e87","name":"build","project_slug":"gh/ropensci/circle","status":"success","started_by":"9c373331-d0f7-45e1-afe6-4a5c75e00d10","pipeline_number":468,"created_at":"2020-11-03T11:04:49Z","stopped_at":"2020-11-03T11:06:40Z"}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/pipeline/111fb318-b3e9-4c7b-89c9-c475acaffa29/workflow?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:24 GMT
+      server: nginx
+      set-cookie: ring-session=lP7v14NlfupfG0Qm0gj4bLdA6meG%2BjnfDPC%2FQl8gpf3XKwn7OB9RGORBt81mqy1NVg1CMN4UA4E0pcQ%2B3j4JRbkgkQyXuSxqQgt72wPs99uGh1VnnhFaR7NL8TFSvjUJ7jMOPFh1hSLCS%2BvO4u5O1V2Y2FPyGNZ1oca%2FpdK9j7RS%2BWjRMQqTdpESv29OUPsMpfX8ZV2x0TafM4GJVDEd%2FHQy5GtAREucDOkszQd5pdA%3D--TUs3NWv3%2B5rxBTGNewNem1SP0YwEwiXJOs8%2FiN7RrAI%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 21:13:20 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-jwzmz
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 1c36b5b9-e466-4f64-9d51-fb9e69870781
+      x-route: /api/v2/pipeline/:pipeline-id/workflow
+      content-length: '263'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":null,"items":[{"pipeline_id":"111fb318-b3e9-4c7b-89c9-c475acaffa29","id":"9cb6e4ab-7454-4994-9de2-4ebd78e9f52b","name":"build","project_slug":"gh/ropensci/circle","status":"success","started_by":"9c373331-d0f7-45e1-afe6-4a5c75e00d10","pipeline_number":467,"created_at":"2020-11-03T10:54:23Z","stopped_at":"2020-11-03T10:55:42Z"}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/pipeline/6aa98dbf-68fd-4696-a5eb-6f87d2724fca/workflow?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:24 GMT
+      server: nginx
+      set-cookie: ring-session=Ih9V3%2FlP2lmibwdd1R1C34IfmrZc%2B5XY%2Bh4OHqDZiMw9qEb6e0bjkcndJA%2B5zM7dVIUNqC%2BrsTVmuarQ8ZE2fqLwkXA9TqsVXp3OptrBrdVVyJQtZtnSRzrBykGK7tIN00lTako2Z3bUq02mPS02qumli0zpzV4ZXXM45N3NfYgtjPlYGNHaENY7RFazolVCD%2BTX3sh7igROc86cFSc03vvl%2Bahg1vKOaTuACieD3ZU%3D--VxCq4jHdVkXrURXqc5jg5RjYP3UmyTJ2xvJdse5qLw8%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:18:53 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-cfhql
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 5a5bd4aa-1421-4a0a-abbd-66add078e70c
+      x-route: /api/v2/pipeline/:pipeline-id/workflow
+      content-length: '264'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":null,"items":[{"pipeline_id":"6aa98dbf-68fd-4696-a5eb-6f87d2724fca","id":"ccb57a29-9607-4f60-b191-a1f8e890264d","name":"build","project_slug":"gh/ropensci/circle","status":"success","started_by":"9c373331-d0f7-45e1-afe6-4a5c75e00d10","pipeline_number":466,"created_at":"2020-11-03T10:49:20Z","stopped_at":"2020-11-03T10:51:16Z"}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/pipeline/2b7c55eb-3648-45c0-9d5c-1730a07b3f9f/workflow?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:24 GMT
+      server: nginx
+      set-cookie: ring-session=Miqe8YOGg0hs4FcVpsquusjPwicTpJ9pLDK8X3Nd7p8ppqtcmfMnMUHZBK2BerHtCBMpKKdq3wN1g9dWKpZxH%2FSGvoSlEZL8%2BHh%2Bo5KL0TqNmeliYA%2FnrXfw8w34HPu4R%2Ff1DMYR5UD2alyaVRNQvbwrnd74n7F268zor7OSczGbP7BkZW9BzSZw3FhIL2MyYVNrT6UfX%2BA7yWWW5BPte6L6niYQ%2FMTh7LMc%2BXxDg%2F4%3D--fHIG3eAB6SH%2BbxOoJ7jkX07TJAGCycd3O3uTBeeeUEU%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:14:49 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-28xrw
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: d820a9d8-172e-4056-a6df-4c8857ac48b0
+      x-route: /api/v2/pipeline/:pipeline-id/workflow
+      content-length: '265'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":null,"items":[{"pipeline_id":"2b7c55eb-3648-45c0-9d5c-1730a07b3f9f","id":"5015324d-e6f3-4e84-9985-f597bc7a0b68","name":"build","project_slug":"gh/ropensci/circle","status":"success","started_by":"9c373331-d0f7-45e1-afe6-4a5c75e00d10","pipeline_number":465,"created_at":"2020-11-03T10:23:41Z","stopped_at":"2020-11-03T10:25:48Z"}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/pipeline/c7287fec-3a2b-4cc0-be22-bbffceb9cc9f/workflow?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:25 GMT
+      server: nginx
+      set-cookie: ring-session=bWXSLVf2OmKmb4dHsU3eBMeudYjDS%2FZ2zKTaHX2ZdX%2FM7aqHa5211eyLXCrSFHa2ZQx4xPHkahiYAc%2FZL%2BLh7xffHBdXnKT3Krt3zyfPmjFccjEA5hEIJvCRd06CiFmF0aVCB958vRVJjnsi7aGJhtsVmlkPQmOmKq0Gf1e%2FOLEhAmWHWR8YHRUDBpx8Stbs3xX%2BYBB5eykikc0%2BZ8ONvXuc7%2BjXBjua7BSMymG9qU8%3D--BsQSFgGvuOk9G94gghUhKgR7vMSGT%2FNSbH1A57QH%2F98%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 21:24:12 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-rdkvt
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 5c160458-8a84-4fa3-9283-4c4412547cb7
+      x-route: /api/v2/pipeline/:pipeline-id/workflow
+      content-length: '263'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":null,"items":[{"pipeline_id":"c7287fec-3a2b-4cc0-be22-bbffceb9cc9f","id":"219eb189-5bc1-444a-a592-4e3c69f83ec1","name":"build","project_slug":"gh/ropensci/circle","status":"success","started_by":"9c373331-d0f7-45e1-afe6-4a5c75e00d10","pipeline_number":464,"created_at":"2020-11-03T10:03:56Z","stopped_at":"2020-11-03T10:05:37Z"}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/pipeline/04aba538-5c6b-437b-ac00-bba435bc0e0a/workflow?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:25 GMT
+      server: nginx
+      set-cookie: ring-session=1s5OPRAzJV7opqwvY%2FsBVwdkMjMVxz9khaaVdNHuVJEFb%2FTBRmmBrcQfCsYjjGALp9kSnUZ94lt2p5WIDv7v9bi2oeyYd34DA%2FhvSLF8gfdignC9osxuuoLcyfopKlMZr51tTsIMaEQxTx7MrHWTDYRdt7Y2GhtK2lGDZ73A4VqMhoZdm0TND%2F5DVCz6hjnIaV1FGDEo0kXWp20gDZ4ZuppFmG%2FZXoTqM6hm9RMEyx8%3D--mQt9X%2FmnhdNliguNdEAhRFpshIlqLwinHMAmfWjoioM%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:10:22 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-mvr88
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 1f48d28f-f74d-44ae-8064-9ced1bfa4071
+      x-route: /api/v2/pipeline/:pipeline-id/workflow
+      content-length: '263'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":null,"items":[{"pipeline_id":"04aba538-5c6b-437b-ac00-bba435bc0e0a","id":"031d8476-79b9-4cfc-8edf-e3ff5cfa3db9","name":"build","project_slug":"gh/ropensci/circle","status":"success","started_by":"9c373331-d0f7-45e1-afe6-4a5c75e00d10","pipeline_number":463,"created_at":"2020-11-03T09:45:20Z","stopped_at":"2020-11-03T09:48:14Z"}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/pipeline/abfa7482-ad8d-431d-9287-1603580e256d/workflow?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:25 GMT
+      server: nginx
+      set-cookie: ring-session=tq5sr2%2F1%2B32U9dCUSnE2E5ceboscqKL61bdFdzK1LoA9j3wCHV0sWdSYPCJodWAcBzkh%2BDUTy%2F3vqSxyxa6Ir1hiJPuiwLfmO32wjHcKm0NRf4kiXvxzBbO1mLKx%2FP2PAmHqG1ei%2BUR7JYSeTU17DG0NVw2ZjvFiTxIo14FFM3p42kG7OsJGOgQTZf%2BLWluCNB5MPv5aNg7ZFA82p8%2BZ9t5V5ZFxBD0gpYCnJDkUiCc%3D--JWebx7v%2FO0JDlN0Rz7TaB5H%2B5xqt9lhnaAys%2FHqNBOQ%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:16:39 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-qhwqp
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 40e1aac1-ff03-408c-bcca-db617fcbd3b2
+      x-route: /api/v2/pipeline/:pipeline-id/workflow
+      content-length: '263'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":null,"items":[{"pipeline_id":"abfa7482-ad8d-431d-9287-1603580e256d","id":"d5dcf6d8-19d6-45b1-8bef-59032e63b4f2","name":"build","project_slug":"gh/ropensci/circle","status":"failed","started_by":"9c373331-d0f7-45e1-afe6-4a5c75e00d10","pipeline_number":462,"created_at":"2020-11-03T09:29:58Z","stopped_at":"2020-11-03T09:32:14Z"}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/pipeline/cc9f4ccb-ccb0-41a0-b4a0-16ca60f33586/workflow?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:25 GMT
+      server: nginx
+      set-cookie: ring-session=ZnKIVxJMLX289dFOJmBlb5svzkHTkNWXJ%2FY5eZFPM5xr5ZSnIGThsVyFS5pDaSJKzshmuadQAdcGSjPoi2%2FKSP7dah4jS6CwPXM2N5vOIdls26N1KbU2Wu%2F%2FBy2WPbPXTnZOJEeN4SGl2pFIvWrl81kxAk2%2FTW1Y2inLUQh1CTG4g0DxHfCrIuA3Rf3%2FA2JBhpsh28HGbUXORaDK61uGd4ipOgAZNF0qf8R6EbnjNOQ%3D--FsdN%2FlBZLUCJOYdcW5pcrMtW08zqgKwwfGAzYSvR05Y%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:14:27 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-87djx
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 83637f65-c24c-4bc6-820c-e80e0773db69
+      x-route: /api/v2/pipeline/:pipeline-id/workflow
+      content-length: '265'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":null,"items":[{"pipeline_id":"cc9f4ccb-ccb0-41a0-b4a0-16ca60f33586","id":"4db4e6b0-837d-4593-acf9-7e292983af04","name":"nightly","project_slug":"gh/ropensci/circle","status":"success","started_by":"d9b3fcaa-6032-405a-8c75-40079ce33c3e","pipeline_number":461,"created_at":"2020-11-03T04:00:51Z","stopped_at":"2020-11-03T04:06:28Z"}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/pipeline/1ae27c25-b610-4e43-bcb7-578ca0a680d6/workflow?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:25 GMT
+      server: nginx
+      set-cookie: ring-session=yfa1dUBVEWtAUllvrhPco7bCwOBQbncGWa5SG1vIadcEdOodIF7lgMX8fC7QWxrquGButTmfm1aZOLHoC8LPJdiIxuToKFFvdkZfpVq5lM9b4nxtDIxuKWBiSMxCTXvNnoZiJ992jH0HqQbQH5Elf%2BVsEw8t6uyl3WTPU%2FSCxWNM7xj3IG3jSfkHowk84lICdeyW0rUh1yn%2FqUpDPIIxQQXBnm8L0Pk7BsExU6B92fY%3D--AvO1VQITk14ldYgtRzJtThFiExifoCaS%2FbTuYW6rEms%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 23:42:07 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-ndgcz
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 2776bd4a-051a-4a2d-8956-413221b61add
+      x-route: /api/v2/pipeline/:pipeline-id/workflow
+      content-length: '263'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":null,"items":[{"pipeline_id":"1ae27c25-b610-4e43-bcb7-578ca0a680d6","id":"97c77f87-01c3-4b94-bc90-83ad2314afbe","name":"build","project_slug":"gh/ropensci/circle","status":"success","started_by":"9c373331-d0f7-45e1-afe6-4a5c75e00d10","pipeline_number":460,"created_at":"2020-11-02T19:45:34Z","stopped_at":"2020-11-02T19:47:45Z"}]}'
+  recorded_at: 2020-11-03 11:39:26 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

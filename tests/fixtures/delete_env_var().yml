@@ -1,0 +1,39 @@
+http_interactions:
+- request:
+    method: delete
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/envvar/foo?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:41 GMT
+      server: nginx
+      set-cookie: ring-session=TBYe0vbHSZYidigGKzLeUZBxhCLwN8sg042Cu9cWW1FhYNrPRPSBzndW%2F0T3ss2Gzfnq8xHDm0HWp9DpQIm%2FaRAV2lvkRBkfN6WDd6cBMHCe8NWagoZ2moS9G7ZqvaY85OxdDB7Yn%2BTl91u%2FVJwUjrpWEk%2B2%2FRhR%2FweCSPKQXuRcK0CEvNEbP3xT2%2FJ6dfWBzSF8sgnT2EaUK2Y0MxYJatu1X39nk0ZGETubTRMLkD0%3D--Q%2B1FWn6Q%2FG1qxQ5BX0TtufH%2B7iZT4IM8vKmw97MGkNo%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:14:47 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      x-circleci-identity: circle-www-api-v1-777c756979-2mkkb
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 480f9132-29fb-4196-abd2-49d4f1a41432
+      x-route: /api/v2/project/:project-slug/envvar/:name
+      content-length: '63'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"message":"Environment variable deleted."}'
+  recorded_at: 2020-11-03 11:39:41 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

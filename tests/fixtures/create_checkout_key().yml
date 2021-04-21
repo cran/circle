@@ -1,0 +1,40 @@
+http_interactions:
+- request:
+    method: post
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/checkout-key?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: '{"type":"user-key"}'
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+  response:
+    status:
+      status_code: 201
+      category: Success
+      reason: Created
+      message: 'Success: (201) Created'
+    headers:
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:40 GMT
+      server: nginx
+      set-cookie: ring-session=ebRom%2B5XCErze6AUlm0owxEGXqucuOZthFveRQvWl8b0sNR27ydy5qjWpqSqgR0rWCblVvZCsQp%2B8FvilxQfLBxWQvxLxB4CQQnCdjzLitd97Wc%2FKEhsLpMBv7%2BjhJMmdmx%2BFMDvfBTLTZGvG0cGBJKzm8uxnxq2kg47Gv97y4Z2d0nh4cDeILM%2Bt2OlfTK0zSyifm4xk7GPAcU%2FMf5RDkOa%2BPwf7b%2Bi9pDQAsJTGeA%3D--M1pnwTxbWVxIFwSQjApdD3tkyEa%2F6ejv1InkC%2B0NazM%3D;Path=/;HttpOnly;Expires=Wed,
+        03 Nov 2021 10:48:41 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      x-circleci-identity: circle-www-api-v1-777c756979-49rr9
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 88bf4a33-109f-44a7-ac91-03f2fbcc4a7c
+      x-route: /api/v2/project/:project-slug/checkout-key
+      content-length: '546'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"type":"github-user-key","preferred":true,"created_at":"2020-11-03T11:39:40.233Z","public_key":"ssh-rsa
+        AAAAB3NzaC1yc2EAAAADAQABAAABAQCzwHNSKi2R+vZ7t4luyGbo36pCZSU/eV9pV368Gx+p2uuJo/jt4lRyXhXvmoIxdBec+yGPzZKq9ktKDqRPFV3DIdWyCL0vCq1AbPXuE2ldL+xgurqIW6bb/WPzY2rhG/LFB0qpyls5RXLbYaHzaHhydTv0ZltlpQ5lBMUBt0jfBc+nbinwZtJw0sD6rtGize7ngt1s+VbmixkpVaTgd3vjibzcKKwKvrFlBQfgcPKbZdLR/fzU+ssdIYQuq3OYMGeU2GiWkaBR6h8ehXwvhSmI2aQCxo8Br+fFDMyCrEYgOzaakvzkqdTcbEfxfyiql/T0x8e7WNT/8b4toX9TanKD
+        \n","fingerprint":"d3:28:47:34:73:54:db:88:58:ba:16:65:a5:03:79:4f"}'
+  recorded_at: 2020-11-03 11:39:40 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

@@ -1,0 +1,43 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/checkout-key?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-origin: '*'
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:43 GMT
+      server: nginx
+      set-cookie: ring-session=CBbuaNtcZAgMyW0ifW%2Fih0e%2BEcTXRXNwINhX6OIfas6eYWBG9IMUT%2Fm7qLUZ7n5Yhhc3%2FxtUXwgjXNLpq5kYuouzvJ8oJZk2S%2BRQr%2BkT9mlCqGBeZdU4excYQY9PjUp39Bc52IrWXQteT8559IYxYuHCpGKgu78T3H0%2BLMOREiwZJUpr9V70giv1%2FIuP%2B3Wx2Iz3qBCbvv0oq2WhY2DQuAbdD07g5XST3zQ20mR1Zmg%3D--ntKm54uxvssOGBrVYeJurAyNPIXPP0QMkEvRpniwUFg%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:16:45 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      vary: Origin
+      x-circleci-identity: circle-www-api-v1-777c756979-zzd2d
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: a9d71a5b-8ca5-47f6-9b1f-985732d3f858
+      x-route: /api/v2/project/:project-slug/checkout-key
+      content-length: '496'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"next_page_token":null,"items":[{"type":"github-user-key","preferred":true,"created_at":"2020-10-08T08:13:39.632Z","public_key":"ssh-rsa
+        AAAAB3NzaC1yc2EAAAADAQABAAABAQChH8hA0L+vEmFxCyTwFii98G0HzfntiD9WelvOSnqopjPNtvp4f7nT4uXwr7PNLitbMIYMFxJyse8U4spAlSnFCHhYcf2ckA/nNX21CzSigGL6TOUcctIJcuwlbFMYfcTUipHUyWEz2lnGoVe3udEZL9JCWJfJdi/afZhjQDfhOH/Gmy/F3HQ6LlXgn5EHoExsOKRERQteAebl8B1i6mulGYqSjj4JBE5UWyz5w74V6l9QjUO5xngVZ0KtVu5bhmzwsC9OIQK9BjBZ4imicFQMi2FtgXeiogN5h9BVPVbfsh+c9TvpbzxaODJLOGJ7liCMq2o0ICioCCXUYUJQH8yh
+        \n","fingerprint":"4e:50:77:79:59:1a:ef:27:41:3f:b4:2f:61:74:ca:d9"}]}'
+  recorded_at: 2020-11-03 11:39:43 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

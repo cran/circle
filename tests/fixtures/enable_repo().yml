@@ -1,0 +1,39 @@
+http_interactions:
+- request:
+    method: post
+    uri: https://circleci.com/api/v1.1/project/gh/ropensci/circle/follow?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Content-Type: ''
+      Accept: application/json
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      content-encoding: gzip
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:38 GMT
+      server: nginx
+      set-cookie: ring-session=E7wxR%2FtLgVjt%2FRKXmMOU98RpLd%2Buyyurc%2BqP6n7Sw2ahTz3BKC4wMUTflwqRhqif5HsDHluelrhjCcIJTUap4VTJdMh41PJDFsR9Rn4Q7iVAgakp4pY6ku1T4Pn8NeVPPuBDziSDs18iEs2IDkBVv78bMYEF611%2Fbncy%2B3OUilZFQCAppToOsZLsh%2FrrGGGwZxIshnAJJhnIrB2SOQ%2F7y3EIcJ%2FusK1UCygN4%2FiC%2BjA%3D--zA425wL655ZCLczf%2B6%2BFbEQyb6wCiDh2KxnB1nkn0HM%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 15:19:06 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      x-circleci-identity: circle-www-api-v1-777c756979-cb9sr
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 2dfe2dc3-9f75-4b8d-b76d-aa68fb3be3d5
+      x-route: /api/v1.1/project/:vcs-type/:username/:repo/follow
+      content-length: '71'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"following":true,"workflow":false,"first_build":null}'
+  recorded_at: 2020-11-03 11:39:39 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0

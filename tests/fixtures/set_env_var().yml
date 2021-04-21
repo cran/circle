@@ -1,0 +1,38 @@
+http_interactions:
+- request:
+    method: post
+    uri: https://circleci.com/api/v2/project/gh/ropensci/circle/envvar?circle-token=<<<R_CIRCLE>>>
+    body:
+      encoding: ''
+      string: '{"name":"foo","value":"test"}'
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+  response:
+    status:
+      status_code: 201
+      category: Success
+      reason: Created
+      message: 'Success: (201) Created'
+    headers:
+      content-type: application/json;charset=utf-8
+      date: Tue, 03 Nov 2020 11:39:40 GMT
+      server: nginx
+      set-cookie: ring-session=R5u8frl4LXLOdExt3excCX8vm5XDckpeUMjfVFBCiwDA%2FNjAaxarr716f32RHvics635tUfn6bTa64%2FQZaE67vk%2F%2FDQQcZQzPcam0J9ehTlVmjGp9XadPcc%2BXV4U5d7JWdi2uFAA2FokL%2FecDyjslnG9bHQJ2at%2FYqK%2BN4mvNUatA%2FE6IPERDyvkbbre%2BmUTynb23c1hRMxoqwCOoEDDAuy3p3yY%2BhjR%2BQ5FcTeZR%2F4%3D--YpFe4DRUgqMRFXVdzxBeA0bc7J6LgksZFSan5QwH9vQ%3D;Path=/;HttpOnly;Expires=Tue,
+        02 Nov 2021 21:24:11 +0000;Max-Age=1209600;Secure
+      strict-transport-security: max-age=15724800
+      x-circleci-identity: circle-www-api-v1-777c756979-dpd2d
+      x-frame-options: DENY
+      x-ratelimit-limit: '151'
+      x-ratelimit-remaining: '150'
+      x-ratelimit-reset: '0'
+      x-request-id: 6459853f-21ce-4d20-9c2f-37c6a72449f9
+      x-route: /api/v2/project/:project-slug/envvar
+      content-length: '31'
+      connection: keep-alive
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"name":"foo","value":"xxxxst"}'
+  recorded_at: 2020-11-03 11:39:40 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.7.0
