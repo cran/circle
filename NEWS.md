@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# circle 0.7.2
+
+- CRAN documentation fixes
+
+
 # circle 0.7.1
 
 - Initial CRAN release

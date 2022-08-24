@@ -1,6 +1,6 @@
 Package: circle
 Title: R Client Package for Circle CI
-Version: 0.7.1
+Version: 0.7.2
 Authors@R: 
     c(person(given = "Patrick",
              family = "Schratz",
@@ -30,9 +30,9 @@ VignetteBuilder: knitr
 Config/testthat/edition: 3
 Config/testthat/parallel: true
 Encoding: UTF-8
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.1
 NeedsCompilation: no
-Packaged: 2021-04-20 15:26:29 UTC; pjs
+Packaged: 2022-08-24 07:25:26 UTC; pjs
 Author: Patrick Schratz [aut, cre] (<https://orcid.org/0000-0003-0748-6624>),
   Max Joseph [rev] (Max reviewed the package for ropensci, see
     <https://github.com/ropensci/software-review/issues/356>),
@@ -40,4 +40,4 @@ Author: Patrick Schratz [aut, cre] (<https://orcid.org/0000-0003-0748-6624>),
     <https://github.com/ropensci/software-review/issues/356>)
 Maintainer: Patrick Schratz <patrick.schratz@gmail.com>
 Repository: CRAN
-Date/Publication: 2021-04-21 07:50:10 UTC
+Date/Publication: 2022-08-24 07:50:02 UTC
