@@ -1,4 +1,11 @@
-<!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
+<!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
+
+# circle 0.7.3
+
+- Account for deprecated `usethis` functions
+- Fix validation for Circle CI API token
+- Roxygen updates
+
 
 # circle 0.7.2
 

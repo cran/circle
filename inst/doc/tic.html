@@ -49,7 +49,7 @@ overflow: visible;
 </style>
 <style type="text/css" data-origin="pandoc">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -60,7 +60,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
 { counter-reset: source-line 0; }
@@ -395,61 +395,61 @@ details on this process.</p>
 has also been set up with {tic}.</p>
 <p>Let’s walk through it step by step to understand what is
 happening:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">r-release</span><span class="kw">:</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">    # r-release-env</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">environment</span><span class="kw">:</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">docker</span><span class="kw">:</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">image</span><span class="kw">:</span><span class="at"> rocker/verse</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> checkout</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="at">  </span><span class="fu">r-release</span><span class="kw">:</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="co">    # r-release-env</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="at">    </span><span class="fu">environment</span><span class="kw">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="at">    </span><span class="fu">docker</span><span class="kw">:</span></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">image</span><span class="kw">:</span><span class="at"> rocker/verse</span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> checkout</span></span></code></pre></div>
 <p>In this part we specify to use the <a href="https://hub.docker.com/r/rocker/verse">rocker/verse</a> docker
 image as the base for the job. The first step is “checkout” which means
 the repository is cloned.</p>
 <hr />
-<div class="sourceCode" id="cb2"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">      # create a unique env var for the cache. Unfortunately normal env vars</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">      # are not picked up by the cache, therefore this workaround is needed.</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">      # See https://discuss.circleci.com/t/cannot-use-circle-yml-environment-variables-in-cache-keys/10994/7</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">run</span><span class="kw">:</span><span class="at"> echo &quot;$(date &#39;+%d-%m&#39;)-r-release&quot; &gt; /tmp/_tmp_file</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">restore_cache</span><span class="kw">:</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">key</span><span class="kw">:</span><span class="at"> R-package-library-{{ checksum &quot;/tmp/_tmp_file&quot; }}</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="co">      # create a unique env var for the cache. Unfortunately normal env vars</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="co">      # are not picked up by the cache, therefore this workaround is needed.</span></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="co">      # See https://discuss.circleci.com/t/cannot-use-circle-yml-environment-variables-in-cache-keys/10994/7</span></span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">run</span><span class="kw">:</span><span class="at"> echo &quot;$(date &#39;+%d-%m&#39;)-r-release&quot; &gt; /tmp/_tmp_file</span></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">restore_cache</span><span class="kw">:</span></span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a><span class="at">          </span><span class="fu">key</span><span class="kw">:</span><span class="at"> R-package-library-{{ checksum &quot;/tmp/_tmp_file&quot; }}</span></span></code></pre></div>
 <p>Next, an action related to caching R packages is initiated. This
 saves some time in the future because once all R packages which the
 package needs have been installed once for a given day, they will be
 re-used in future builds of the day without having to be installed
 again.</p>
 <hr />
-<div class="sourceCode" id="cb3"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">      # install deps and check pkg ---------------------------------------------</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">run</span><span class="kw">:</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">name</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;[r-release] Install dependencies&quot;</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">          command</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>            sudo apt update &amp;&amp; sudo apt install -y ccache libgit2-dev libharfbuzz-dev libfribidi-dev</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>            echo -e &#39;options(Ncpus = 4, repos = structure(c(CRAN = &quot;https://cloud.r-project.org/&quot;)))&#39; &gt; $HOME/.Rprofile</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>            R -q -e &#39;install.packages(&quot;remotes&quot;)&#39;</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>            R -q -e &#39;if (getRversion() &lt; &quot;3.2&quot; &amp;&amp; !requireNamespace(&quot;curl&quot;)) install.packages(&quot;curl&quot;)&#39;</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>            R -q -e &#39;remotes::install_github(&quot;ropensci/tic&quot;, upgrade = &quot;always&quot;); print(tic::dsl_load()); tic::prepare_all_stages()&#39;</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>            R -q -e &#39;tic::before_install()&#39;</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>            R -q -e &#39;tic::install()&#39;</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co">      # install deps and check pkg ---------------------------------------------</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">run</span><span class="kw">:</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="at">          </span><span class="fu">name</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;[r-release] Install dependencies&quot;</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="fu">          command</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>            sudo apt update &amp;&amp; sudo apt install -y ccache libgit2-dev libharfbuzz-dev libfribidi-dev</span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a>            echo -e &#39;options(Ncpus = 4, repos = structure(c(CRAN = &quot;https://cloud.r-project.org/&quot;)))&#39; &gt; $HOME/.Rprofile</span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a>            R -q -e &#39;install.packages(&quot;remotes&quot;)&#39;</span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a>            R -q -e &#39;if (getRversion() &lt; &quot;3.2&quot; &amp;&amp; !requireNamespace(&quot;curl&quot;)) install.packages(&quot;curl&quot;)&#39;</span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a>            R -q -e &#39;remotes::install_github(&quot;ropensci/tic&quot;, upgrade = &quot;always&quot;); print(tic::dsl_load()); tic::prepare_all_stages()&#39;</span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a>            R -q -e &#39;tic::before_install()&#39;</span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a>            R -q -e &#39;tic::install()&#39;</span></code></pre></div>
 <p>Next, the {tic} package is installed and certain <a href="https://docs.ropensci.org/tic/articles/build-lifecycle.html">tic
 steps</a> are run. These take care of installing the dependencies of the
 R package to be checked and prepare the environment of other subsequent
 steps.</p>
 <hr />
-<div class="sourceCode" id="cb4"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">run</span><span class="kw">:</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">name</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;[r-release] R CMD Check&quot;</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">no_output_timeout</span><span class="kw">:</span><span class="at"> 60m</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">          command</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>            R -q -e &#39;tic::before_script()&#39;</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>            R -q -e &#39;tic::script()&#39;</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">run</span><span class="kw">:</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="at">          </span><span class="fu">name</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;[r-release] R CMD Check&quot;</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="at">          </span><span class="fu">no_output_timeout</span><span class="kw">:</span><span class="at"> 60m</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="fu">          command</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>            R -q -e &#39;tic::before_script()&#39;</span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a>            R -q -e &#39;tic::script()&#39;</span></code></pre></div>
 <p>This step checks the package for CRAN eligibility by making use of
 <code>rcmdcheck::rcmdcheck()</code> inside the
 <code>tic::script()</code> call.</p>
 <hr />
-<div class="sourceCode" id="cb5"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">      # save R pkg cache -------------------------------------------------------</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">save_cache</span><span class="kw">:</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">key</span><span class="kw">:</span><span class="at"> R-package-library-{{ checksum &quot;/tmp/_tmp_file&quot; }}</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">paths</span><span class="kw">:</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="kw">-</span><span class="at"> /usr/local/lib/R/site-library</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode yml"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="co">      # save R pkg cache -------------------------------------------------------</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">save_cache</span><span class="kw">:</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="at">          </span><span class="fu">key</span><span class="kw">:</span><span class="at"> R-package-library-{{ checksum &quot;/tmp/_tmp_file&quot; }}</span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="at">          </span><span class="fu">paths</span><span class="kw">:</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="at">            </span><span class="kw">-</span><span class="at"> /usr/local/lib/R/site-library</span></span></code></pre></div>
 <p>Finally, the R package which was initiated earlier is saved.</p>
 <hr />
 <p>The <code>deploy:</code> step following next is in most parts
