@@ -48,8 +48,9 @@ overflow: visible;
 }
 </style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -60,7 +61,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
 { counter-reset: source-line 0; }
@@ -380,35 +381,32 @@ way to create one if none exists yet.</p>
 check if everything was set up correctly.</p>
 <p><code>get_circle_user()</code> makes uses of the Circle CI API
 key.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>circle<span class="sc">::</span><span class="fu">get_circle_user</span>()</span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="sc">$</span>content</span>
-<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="sc">$</span>content<span class="sc">$</span>name</span>
-<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">&quot;Patrick Schratz&quot;</span></span>
-<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a><span class="sc">$</span>content<span class="sc">$</span>login</span>
-<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">&quot;pat-s&quot;</span></span>
-<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a><span class="sc">$</span>content<span class="sc">$</span>id</span>
-<span id="cb2-11"><a href="#cb2-11" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">&quot;9c373331-d0f7-45e1-afe6-4a5c75e00d10&quot;</span></span>
-<span id="cb2-12"><a href="#cb2-12" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" tabindex="-1"></a></span>
-<span id="cb2-14"><a href="#cb2-14" tabindex="-1"></a><span class="sc">$</span>path</span>
-<span id="cb2-15"><a href="#cb2-15" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">&quot;/me&quot;</span></span>
-<span id="cb2-16"><a href="#cb2-16" tabindex="-1"></a></span>
-<span id="cb2-17"><a href="#cb2-17" tabindex="-1"></a><span class="sc">$</span>response</span>
-<span id="cb2-18"><a href="#cb2-18" tabindex="-1"></a>Response [https<span class="sc">:</span><span class="er">//</span>circleci.com<span class="sc">/</span>api<span class="sc">/</span>v2<span class="sc">/</span>me?circle<span class="sc">-</span>token<span class="ot">=</span><span class="dv">39</span>d697f345d8d8a92ab07c333405d9b0092d116c]</span>
-<span id="cb2-19"><a href="#cb2-19" tabindex="-1"></a>  Date<span class="sc">:</span> <span class="dv">2021-01-07</span> <span class="dv">20</span><span class="sc">:</span><span class="dv">07</span></span>
-<span id="cb2-20"><a href="#cb2-20" tabindex="-1"></a>  Status<span class="sc">:</span> <span class="dv">200</span></span>
-<span id="cb2-21"><a href="#cb2-21" tabindex="-1"></a>  Content<span class="sc">-</span>Type<span class="sc">:</span> application<span class="sc">/</span>json;charset<span class="ot">=</span>utf<span class="dv">-8</span></span>
-<span id="cb2-22"><a href="#cb2-22" tabindex="-1"></a>  Size<span class="sc">:</span> <span class="dv">86</span> B</span>
-<span id="cb2-23"><a href="#cb2-23" tabindex="-1"></a></span>
-<span id="cb2-24"><a href="#cb2-24" tabindex="-1"></a></span>
-<span id="cb2-25"><a href="#cb2-25" tabindex="-1"></a><span class="fu">attr</span>(,<span class="st">&quot;class&quot;</span>)</span>
-<span id="cb2-26"><a href="#cb2-26" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">&quot;circle_user&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>circle<span class="sc">::</span><span class="fu">get_circle_user</span>()</span></code></pre></div>
+<p>Example output:</p>
+<pre><code>$content
+$content$name
+[1] &quot;Patrick Schratz&quot;
+
+$content$login
+[1] &quot;pat-s&quot;
+
+$content$id
+[1] &quot;9c373331-d0f7-45e1-afe6-4a5c75e00d10&quot;
+
+$path
+[1] &quot;/me&quot;
+
+$response
+Response [https://circleci.com/api/v2/me?circle-token=***]
+  Date: 2021-01-07 20:07
+  Status: 200
+  Content-Type: application/json;charset=utf-8
+  Size: 86 B
+
+attr(,&quot;class&quot;)
+[1] &quot;circle_user&quot;</code></pre>
 <p><code>enable_repo()</code> also uses the GitHub token.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>circe<span class="sc">::</span><span class="fu">enable_repo</span>()</span>
-<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>✔ Successfully enabled repo <span class="st">&#39;ropensci/circle&#39;</span> on Circle CI.</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>circle<span class="sc">::</span><span class="fu">enable_repo</span>()</span></code></pre></div>
 <p>After the repo has been enabled, it should be returned in
 <code>circle::list_projects()</code>.</p>
 </div>
@@ -421,11 +419,11 @@ tedious with respect to permissions. Here
 pair which will enable deployment. The private key will be stored in
 GitHub (under “Settings -&gt; SSH and GPG keys”) and the public key on
 Circle CI (on the respective project page in “SSH Keys”).</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>circle<span class="sc">::</span><span class="fu">use_circle_deploy</span>()</span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>✖ No <span class="st">&#39;user-key&#39;</span> found.</span>
-<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>──────────────────────────────────────────────────────────────────────────────────────────────────</span>
-<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>✔ Added a <span class="st">&#39;user key&#39;</span> to project <span class="st">&#39;&lt;repo-slug&gt;&#39;</span> on Circle CI.</span>
-<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>This enables deployment from builds.</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>circle<span class="sc">::</span><span class="fu">use_circle_deploy</span>()</span></code></pre></div>
+<p>Example output:</p>
+<pre><code>✖ No &#39;user-key&#39; found.
+✔ Added a &#39;user key&#39; to project &#39;&lt;repo-slug&gt;&#39; on Circle CI.
+This enables deployment from builds.</code></pre>
 <p>To double-check, there should now be a “user-key” in your Circle CI
 repo settings under the menu point “SSH keys”. It does not matter if
 multiple “deploy key” or “user-key”s exists. The important point is that
@@ -455,8 +453,8 @@ This key type also has “write” permissions and can be added using
 add a so called “user key” to the settings of the repo on Circle CI. The
 private key will be added to your GitHub profile under the “SSH and GPG
 keys” section with the title pointing to the respective repo. See also
-<a href="https://circleci.com/docs/deployment-integrations/">the Circle
-CI section about deployment</a>.</p>
+<a href="https://circleci.com/docs/guides/deploy/deployment-overview//">the
+Circle CI section about deployment</a>.</p>
 <p>(If for some reasons you do not want to use
 <code>use_circle_deploy()</code> and go the manual way of adding a SSH
 key to Circle CI, please be aware of <a href="https://discuss.circleci.com/t/adding-ssh-keys-fails/7747">this
@@ -468,7 +466,7 @@ issue</a>.)</p>
 <p>As with almost every CI provider, a YAML configuration files is
 required to specify the tasks that should be executed during a build.
 Currently Circle CI does not come with official support for the R
-language but you can add <a href="https://ideas.circleci.com/images/p/add-official-support-for-r">your
+language but you can add <a href="https://ideas.circleci.com/cloud-feature-requests/p/add-official-support-for-r">your
 vote here</a>. Since Circle CI is heavily based on docker this is not
 really a problem. One can simply use the <a href="https://github.com/rocker-org/rocker">rocker</a> R images to have
 first-class support with respect to R containers. Official support for R
@@ -482,6 +480,13 @@ functions <code>tic::use_tic()</code> and
 <code>tic::use_circle_yml()</code> to quickly get R builds running on
 Circle CI. Alternatively you can borrow the config that is being used <a href="https://github.com/ropensci/circle/blob/main/.circleci/config.yml">in
 this repo</a> - which was also created via {tic}.</p>
+</div>
+<div id="see-also" class="section level1">
+<h1>See also</h1>
+<ul>
+<li>Using {circle} with {tic}: <a href="https://docs.ropensci.org/circle/articles/tic.html" class="uri">https://docs.ropensci.org/circle/articles/tic.html</a></li>
+<li>Advanced usage and {tic} integration: <a href="https://docs.ropensci.org/circle/articles/advanced.html" class="uri">https://docs.ropensci.org/circle/articles/advanced.html</a></li>
+</ul>
 </div>
 
 
